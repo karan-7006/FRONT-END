@@ -15,7 +15,7 @@
                     <label>Name*</label>
                 </th>
                 <td>
-                    <input type="text" placeholder="Name" value="" title="Name data">
+                    <input type="text" placeholder="Name" value="" title="Name data" pattern="[a-zA-z ]{3,15}" maxlength="15" required>
                 </td>
             </tr>
 
@@ -24,7 +24,7 @@
                     <label>Email*</label>
                 </th>
                 <td>
-                    <input type="email" placeholder="Email" value="" title="Email data">
+                    <input type="email" placeholder="Email" value="" title="Email data" pattern="[a-z0-9]+@+[a-z]+.+[a-z]{2,3}$" required>
                 </td>
             </tr>
 
@@ -33,7 +33,7 @@
                     <label>Investment</label>
                 </th>
                 <td>
-                    <select>
+                    <select required>
                         <option value=""><b>Please Select</b></option>
                         <option value="">Stocks</option>
                         <option value="">Bonds</option>
@@ -48,7 +48,7 @@
                     Date Joined*
                 </th>
                 <td>
-                    <input type="date" value="" title="Date data">
+                    <input type="date" value="" title="Date data" pattern="[0-9]{2}-[0-9]{2}-[0-9]{4}" required>
                 </td>
             </tr>
 

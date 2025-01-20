@@ -13,7 +13,7 @@
                     <label for="name">Enter your name:</label>
                 </th>
                 <td>
-                    <input id="name" type="text" placeholder="your name" value="" title="Name data">
+                    <input id="name" type="text" placeholder="your name" value="" title="Name data" pattern="[a-zA-z]{3,10}" maxlength="10" required
                 </td>
             </tr>
     
@@ -22,7 +22,7 @@
                 <label for="">Enter your surname:</label>
                </th>
                <td>
-                <input type="text" placeholder="your surname" title="Surname data">
+                <input type="text" placeholder="your surname" title="Surname data" pattern="[a-zA-z]{3,10}" maxlength="10" required>
                </td>
             </tr>
 
@@ -33,7 +33,7 @@
                     </label>
                 </th>
                 <td>
-                    <input type="email" placeholder="your Email" title="Email data">                 
+                    <input type="email" placeholder="your Email" title="Email data" pattern="[a-z0-9]+@+[a-z]+.+[a-z]{2,3}$" required>                 
                 </td>
             </tr>
 
@@ -42,7 +42,7 @@
                     <label for="">Enter your Phone no.:</label>
                 </th>
                 <td>
-                    <input type="tel" placeholder="your Phone number" title="Phone data">
+                    <input type="tel" placeholder="your Phone number" title="Phone data" pattern="[789][0-9]{9}" maxlength="10" required>
                 </td>
             </tr>
 
@@ -51,7 +51,7 @@
                     <label for="">Enter your Password:</label>
                 </th>
                 <td>
-                    <input type="password" placeholder="your Password" title="Password data">
+                    <input type="password" placeholder="your Password" title="Password data" pattern="[a-zA-z0-9]{8,12}" minlength="8" maxlength="12">
                 </td>
             </tr>
 
@@ -69,7 +69,7 @@
                     <label for="">Enter your address:</label>
                 </th>
                 <td>
-                    <textarea name="address" id="address" cols="30" rows="10" title="Address data"></textarea>
+                    <textarea name="address" id="address" cols="30" rows="10" title="Address data" required></textarea>
                 </td>
                 
             </tr>

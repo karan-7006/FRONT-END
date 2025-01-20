@@ -17,7 +17,7 @@
                     <label>First Name:</label>
                 </th>
                 <td>
-                    <input type="text" size="32" placeholder="Ghanendra" value="" title="Name data">
+                    <input type="text" size="32" placeholder="Ghanendra" value="" title="Name data" pattern="[a-zA-z]{3,10}" maxlength="10" required>
                     <td>(Max 50 Characters Allowed)</td>
                 </td>
             </tr>
@@ -27,7 +27,7 @@
                     <label>Last Name:</label>
                 </th>
                 <td>
-                    <input type="text" size="32" placeholder="Yadav" value="" title="Name data">
+                    <input type="text" size="32" placeholder="Yadav" value="" title="Name data" pattern="[a-zA-z]{3,10}" maxlength="10" required>
                     <td>(Max 50 Characters Allowed)</td>
                 </td>
             </tr>
@@ -37,7 +37,7 @@
                     <label>Email:</label>
                 </th>
                 <td>
-                    <input type="email" size="32" placeholder="yghanendra@gmail.com" value="" title="Email data">
+                    <input type="email" size="32" placeholder="yghanendra@gmail.com" value="" title="Email data" pattern="[a-z0-9]+@+[a-z]+.+[a-z]{2,3}$" required>
                 <td>
             </tr>
 
@@ -46,9 +46,118 @@
                     <label>Mobile Number:</label>
                 </th>
                 <td>
-                    <input type="text" size="32" placeholder="7842xxxxxx" value="" title="Mobile data">
+                    <input type="text" size="32" placeholder="7842xxxxxx" value="" title="Mobile data" pattern="[789][0-9]{9}" maxlength="10" required>
                     <td>(10 Digits Allowed)</td>
                 <td>
+            </tr>
+
+            <tr>
+                <td>
+                    Gender :
+                </td>
+                <td>
+                    <input type="radio"> Male
+                    <input type="radio"> Female
+            </tr>
+            <tr>
+                <td>
+                    Date Of Birth (DOB)
+                </td>
+                <td>
+                    <input type="date" pattern="[0-9]{2}-[0-9]{2}-[0-9]{4}" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Address :
+                </td>
+                <td>
+                    <textarea name="" id="" rows="10" cols="40"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="">City</label>
+                </td>
+                <td>
+                    <input type="text" placeholder="Ahmedabad" pattern="[a-zA-z]" required>
+                    <span>(Max. 50 Characters Allowed)</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="">Pincode</label>
+                </td>
+                <td>
+                    <input type="text" placeholder="382345" pattern="[0-9]{6}" required>
+                    <span>(Max. 6 Characters Allowed)</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="">State</label>
+                </td>
+                <td>
+                    <input type="text" placeholder="Gujarat" pattern="[a-zA-z]" required>
+                    <span>(Max. 50 Characters Allowed)</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="">Country</label>
+                </td>
+                <td>
+                    <input type="text" placeholder="India" pattern="[a-zA-z]" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="">Hobbies</label>
+                </td>
+                <td>
+                    <input type="checkbox"> Drawing
+                    <input type="checkbox"> Singing
+                    <input type="checkbox"> Dancing
+                    <input type="checkbox"> Sketching
+                    <input type="checkbox"> Others
+                    <input type="text" placeholder="ex-teaching">
+                    <span>(Max. 50 Characters Allowed)</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="">Qualifications : </label>
+                </td>
+                <td>
+                    <input type="checkbox"> High School (10th) <br>
+                    <input type="checkbox"> Higher School (12th) <br>
+                    <input type="checkbox"> Graduation (Bachelors) <br>
+                    <input type="checkbox"> Postgraduation (Masters) <br>
+                    <input type="checkbox"> Phd
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="">Courses Applied <br> For : </label>
+                </td>
+                <td>
+                    <input type="radio"> BCA (Bachelors In Computer Application) <br>
+                    <input type="radio"> B.com (Bachelors In Commerce) <br>
+                    <input type="radio"> B.Sc (Bachelors In Science) <br>
+                    <input type="radio"> B.A (Bachelors In Arts) <br>
+                    <input type="radio"> MCA (Masters In Computer Application) <br>
+                    <input type="radio"> M.com (Masters In Commerce) <br>
+                    <input type="radio"> M.Sc (Masters In Science) <br>
+                    <input type="radio"> M.A (Masters In Arts) <br>
+                </td>
+            </tr>
+            <tr>
+                <td align="right">
+                    <input type="submit">
+                </td>
+                <td>
+                    <input type="reset">
+                </td>
             </tr>
 
 

@@ -14,7 +14,7 @@
                     <label>Firstname:</label>
                 </th>
                 <td>
-                    <input type="text" placeholder="" value="" title="Name data">
+                    <input type="text" placeholder="" value="" title="Name data" pattern="[a-zA-z]{3,10}" maxlength="10" required>
                 </td>
             </tr>
 
@@ -23,7 +23,7 @@
                     <label>Middlename:</label>
                 </th>
                 <td>
-                    <input type="text" placeholder="" value="" title="Name data">
+                    <input type="text" placeholder="" value="" title="Name data" pattern="[a-zA-z]{3,10}" maxlength="10" required>
                 </td>
             </tr>
 
@@ -32,7 +32,7 @@
                     <label>Lastname:</label>
                 </th>
                 <td>
-                    <input type="text" placeholder="" value="" title="Name data">
+                    <input type="text" placeholder="" value="" title="Name data" pattern="[a-zA-z]{3,10}" maxlength="10" required>
                 </td>
             </tr>
 
@@ -41,7 +41,7 @@
                     Course:
                 </th>
                 <td>
-                    <select>
+                    <select required>
                         <option value=""><b>Course</b>
                         <option value="">Python
                         <option value="">Java
@@ -68,8 +68,8 @@
                     <label>Phone:</label>
                 </th>
                 <td>
-                    <input type="text" placeholder="" value="+91" title="">
-                    <input type="text" placeholder="" value="" title="">
+                    <input type="text" placeholder="" value="+91" title="" pattern="[+91]" required>
+                    <input type="text" placeholder="" value="" title="" pattern="[789][0-9]{9}" maxlength="10" required>
                 </td>
             </tr>
 
@@ -89,7 +89,7 @@
                     <label>Email:</label>
                 </th>
                 <td>
-                    <input type="email" placeholder="" value="" title="">
+                    <input type="email" placeholder="" value="" title="" pattern="[a-z0-9]+@+[a-z]+.+[a-z]{2,3}$" required>
                 </td>
             </tr>
 
@@ -98,7 +98,7 @@
                     <label>Password:</label>
                 </th>
                 <td>
-                    <input type="password" placeholder="" value="" title="">
+                    <input type="password" placeholder="" value="" title="" pattern="[a-zA-z0-9]{8,12}" minlength="8" maxlength="12" required>
                 </td>
             </tr>
 
@@ -107,7 +107,7 @@
                     <label>Re-type password::</label>
                 </th>
                 <td>
-                    <input type="password" placeholder="" value="" title="">
+                    <input type="password" placeholder="" value="" title="" pattern="[a-zA-z0-9]{8,12}" minlength="8" maxlength="12" required>
                 </td>
             </tr>
 
