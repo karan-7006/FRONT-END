@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            height: 200px;
+            width: 200px;
+            border: 2px solid;
+            margin: 200px auto;
+            overflow: hidden;
+            position: relative;
+        }
+        .left{
+            height: 200px;
+            width: 200px;
+            background: rgba(255, 0, 136, 0.427);
+            position: absolute;
+            bottom: 100%;
+            left: 100%;
+            transition: .8s;
+             
+        }
+        .main:hover .left{
+            bottom: 0%;
+            left: 0%;   
+             
+        }
+        .right{
+            height: 200px;
+            width: 200px;
+            background-color: rgba(0, 255, 229, 0.489);
+            position: absolute;
+            top: 100%;
+            right: 100%;
+            transition: .8s;
+        }
+        .main:hover .right{
+            top: 0%;
+            right: 0%;
+             
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="left"></div>
+        <div class="right"></div>
+    </div>
+</body>
+</html>
