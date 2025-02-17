@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            height: 400px;
+            width: 250px;
+            margin: 200px auto;
+            box-shadow: 0 0 10px;
+            background-color: white;
+            position: relative;
+            overflow: hidden;
+        
+        
+        }
+        .image{
+            height: 200px;
+            width: 200px;
+            position: absolute;
+            background-image: url(https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m7.jpg);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            margin-top: 15%;
+            margin-left: 10%;
+        }
+        .image:hover{
+            transform: rotateY(360deg);
+            transition: 0.5s;
+        }
+        .quick{
+            height: 30px;
+            width: 250px;
+            position: absolute;
+            background-color: black;
+            padding-top: 25px;
+            color: white;
+            text-align: center;
+            margin-top: 10px;
+            opacity: 0.2;
+            position: absolute;
+            bottom: 100%;
+            font-size: 20px;
+            font-family: sans-serif;
+            
+        }
+        .main:hover .quick{
+            margin-top: 95%;
+            opacity: 1;
+            transform: translateY(285px);
+            transition: 1s;
+        }
+        .new{
+            height: 25px;
+            width: 55px;
+            background-color: red;
+            color: white;
+            position: absolute;
+            right: 0px;
+            text-align: center;
+            padding-top: 10px;
+            font-family: sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="image"></div>
+        <div class="quick">Quick View</div>
+        <div class="new">New</div>
+</div>
+</body>
+</html>
