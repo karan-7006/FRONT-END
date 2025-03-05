@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 Elements Demo</title>
+</head>
+<body>
+
+    <!-- Audio Tag with Muted, Loop, and Autoplay -->
+    <audio controls muted loop autoplay>
+        <source src="audio.mp3" type="audio/mpeg">
+        Your browser does not support the audio tag.
+    </audio>
+
+    <!-- Video Tag with Muted, Loop, and Autoplay -->
+    <video width="400" controls muted loop autoplay>
+        <source src="video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <!-- Canvas Tag for Drawing Shapes -->
+    <canvas id="myCanvas" width="300" height="200" style="border:1px solid black;"></canvas>
+    <script>
+        const canvas = document.getElementById("myCanvas");
+        const ctx = canvas.getContext("2d");
+
+        // Draw a rectangle
+        ctx.fillStyle = "blue";
+        ctx.fillRect(20, 20, 100, 50);
+
+        // Draw a circle
+        ctx.beginPath();
+        ctx.arc(150, 100, 40, 0, 2 * Math.PI);
+        ctx.fillStyle = "red";
+        ctx.fill();
+        ctx.stroke();
+    </script>
+
+    <!-- SVG Tag for Drawing Shapes -->
+    <svg width="300" height="200" style="border:1px solid black;">
+        <!-- Rectangle -->
+        <rect x="20" y="20" width="100" height="50" fill="blue" />
+
+        <!-- Circle -->
+        <circle cx="150" cy="100" r="40" fill="red" />
+    </svg>
+
+</body>
+</html>
