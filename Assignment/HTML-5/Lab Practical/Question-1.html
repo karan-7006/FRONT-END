@@ -4,46 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML5 Elements Demo</title>
+    <style>
+        canvas {
+            border: 2px solid #4CAF50;
+        }
+        svg {
+            border: 2px solid #2196F3;
+        }
+    </style>
 </head>
 <body>
 
-    <!-- Audio Tag with Muted, Loop, and Autoplay -->
+    <!-- Audio and Video with properties -->
+    <h2>Audio/Video Demo</h2>
     <audio controls muted loop autoplay>
         <source src="audio.mp3" type="audio/mpeg">
-        Your browser does not support the audio tag.
+        Your browser does not support audio.
     </audio>
 
-    <!-- Video Tag with Muted, Loop, and Autoplay -->
-    <video width="400" controls muted loop autoplay>
+    <video width="320" height="240" controls muted loop autoplay>
         <source src="video.mp4" type="video/mp4">
-        Your browser does not support the video tag.
+        Your browser does not support video.
     </video>
 
-    <!-- Canvas Tag for Drawing Shapes -->
-    <canvas id="myCanvas" width="300" height="200" style="border:1px solid black;"></canvas>
+    <!-- Canvas Shapes -->
+    <h2>Canvas Shape</h2>
+    <canvas id="myCanvas" width="300" height="150"></canvas>
+
     <script>
         const canvas = document.getElementById("myCanvas");
         const ctx = canvas.getContext("2d");
 
-        // Draw a rectangle
-        ctx.fillStyle = "blue";
-        ctx.fillRect(20, 20, 100, 50);
+        // Rectangle
+        ctx.fillStyle = "#FF5733";
+        ctx.fillRect(20, 20, 100, 60);
 
-        // Draw a circle
+        // Circle
         ctx.beginPath();
-        ctx.arc(150, 100, 40, 0, 2 * Math.PI);
-        ctx.fillStyle = "red";
+        ctx.arc(200, 70, 40, 0, 2 * Math.PI);
+        ctx.fillStyle = "#4CAF50";
         ctx.fill();
-        ctx.stroke();
     </script>
 
-    <!-- SVG Tag for Drawing Shapes -->
-    <svg width="300" height="200" style="border:1px solid black;">
-        <!-- Rectangle -->
-        <rect x="20" y="20" width="100" height="50" fill="blue" />
-
-        <!-- Circle -->
-        <circle cx="150" cy="100" r="40" fill="red" />
+    <!-- SVG Shapes -->
+    <h2>SVG Shape</h2>
+    <svg width="300" height="150">
+        <rect x="10" y="10" width="100" height="60" fill="#FF5733" />
+        <circle cx="200" cy="70" r="40" fill="#4CAF50" />
     </svg>
 
 </body>
