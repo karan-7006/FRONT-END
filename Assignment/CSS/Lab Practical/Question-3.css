@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+/* Header Styling */
+.header {
+    background-color: #4CAF50;
+    color: #ffffff;
+    text-align: center;
+    padding: 15px;
+}
+
+/* Main Container for Sidebar + Main Content */
+.container {
+    display: flex;
+    flex: 1;
+}
+
+/* Sidebar Styling */
+.sidebar {
+    background-color: #2C3E50;
+    color: #ffffff;
+    width: 250px;
+    padding: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+    margin-top: 10px;
+}
+
+.sidebar li {
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.sidebar li:hover {
+    text-decoration: underline;
+}
+
+/* Main Content Start */
+.main-content {
+    background-image: url(/Images/Ramen-shop.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding: 20px;
+    flex: 1;
+}
+
+.main-content-data {
+    padding: 10px 10px;
+    background-color: red;
+    opacity: 0.5;
+    color: gold;
+}
+
+/* Footer Start */
+.footer {
+    background-color: #34495E;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+}
