@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Effect</title>
+    <style>
+        .container {
+            position: relative;
+            display: inline-block;
+            font-family: Arial, sans-serif;
+        }
+
+        .background-text {
+            font-size: 60px;
+            font-weight: bold;
+            color: rgba(0, 100, 0, 0.2);
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 0;
+            white-space: nowrap;
+        }
+
+        .foreground-text {
+            font-size: 40px;
+            font-weight: bold;
+            color: darkgreen;
+            position: relative;
+            z-index: 1;
+            white-space: nowrap;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="background-text">ABOUT US</div>
+    <div class="foreground-text">ABOUT US</div>
+</div>
+
+</body>
+</html>

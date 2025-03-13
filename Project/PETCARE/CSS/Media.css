@@ -1,0 +1,338 @@
+@media only screen and (max-width:1160px) {}
+
+@media only screen and (max-width:992px) {}
+
+@media screen and (max-width: 768px) {
+    /* General Styles */
+    .Container, .Container-1 {
+        width: 100%;
+        padding: 0 15px;
+    }
+    
+    .Row {
+        flex-direction: column;
+        gap: 30px;
+        padding: 20px 0 !important;
+        margin: 0 !important;
+    }
+    
+    .Col, .Col-40, .Col-60 {
+        width: 100% !important;
+        padding: 10px 0 !important;
+        margin: 0 !important;
+    }
+    
+    /* Header Section */
+    .Navbar {
+        flex-direction: column;
+        padding: 15px 0;
+    }
+    
+    .Logo {
+        width: 60px;
+        margin: 0 auto 15px;
+    }
+    
+    .lists {
+        text-align: center;
+        margin: 10px 0;
+    }
+    
+    .lists .list {
+        display: block;
+        margin: 10px 0;
+    }
+    
+    .Icon {
+        margin: 10px auto;
+        padding: 0;
+        display: none;
+    }
+    
+    .h1-Header {
+        font-size: 40px;
+        margin-top: 50px;
+    }
+    
+    .p-Header {
+        font-size: 20px;
+        width: 100%;
+        margin: 20px 0;
+    }
+    
+    .BTN-Border {
+        margin-right: 60%;
+    }
+
+    .Header-BTN {
+        padding: 10px 40px;
+        font-size: 20px;
+        margin: 10px auto;
+        display: block;
+    }
+    
+    /* Part 2 - Improved for better centering */
+    #Part-2 {
+        padding: 30px 15px;
+    }
+    
+    .h1-Part-2 {
+        font-size: 40px;
+    }
+    
+    .p-part-2 {
+        width: 100%;
+        font-size: 20px;
+        margin: 20px 0;
+    }
+    
+    .Part-2-Content {
+        margin-right: 25%;
+    }
+
+    .Part-2-Content .Row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+        margin: 0;
+    }
+    
+    .Part-2-Content .Row .Col {
+        width: 100% !important;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .Part-2-Card {
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .Part-2-Card-Border {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .Part-2-Card-Details {
+        width: 100%;
+        text-align: center;
+        padding-right: 80px;
+    }
+    
+    .Part-2-Card-Details .h3-Part-2-Card-details {
+        margin: 20px 0;
+        margin-left: 0;
+    }
+    
+    .Part-2-Card-Details .p-Part-2-Card-Details {
+        width: 100%;
+        margin-left: 0;
+        padding: 0 10px;
+    }
+    
+    /* Part 3 */
+    .h1-Part-3 {
+        font-size: 40px;
+        padding-top: 50px;
+    }
+    
+    .p-part-3 {
+        width: 100%;
+        font-size: 20px;
+        margin: 20px 0;
+    }
+
+    .Part-3-Content .Part-3-Data1 {
+        margin: 30px auto;
+        width: 200px;
+        height: 200px;
+    }
+    
+    .Part-3-Data1 .h2-Part-3 {
+        margin-top: 40px;
+    }
+    
+    /* Part 4 */
+.Part-4-Content .Row {
+    padding: 50px 15px !important;
+    gap: 30px;
+}
+
+.Part-4-Data {
+    margin-top: 0;
+    text-align: center;
+}
+
+.Part-4-Data .h1-Part-4 {
+    font-size: 40px;
+}
+
+.Part-4-Data .p-Part-4 {
+    font-size: 20px;
+    margin: 20px 0;
+}
+
+.Part-4-Data .Order-BTN {
+    padding: 10px 40px;
+    font-size: 20px;
+    margin: 0 auto;
+    display: block;
+}
+
+.Part-4-Img {
+    margin: 0 auto;
+    max-width: 90%;
+}
+
+/* Part 5 */
+.Part-5-Content .Row {
+    padding: 50px 15px !important;
+    gap: 30px;
+}
+
+.Part-5-Data {
+    margin-top: 0;
+    text-align: center;
+    order: -1; /* Makes content appear before image on mobile */
+}
+
+.Part-5-Data .h1-Part-5 {
+    font-size: 40px;
+}
+
+.Part-5-Data .p-Part-5 {
+    font-size: 20px;
+    margin: 20px 0;
+}
+
+.Part-5-Data .Order-BTN {
+    padding: 10px 40px;
+    font-size: 20px;
+    margin: 0 auto;
+    display: block;
+}
+
+.Part-5-Img {
+    margin: 0 auto;
+    max-width: 90%;
+}
+    
+    /* Part 6 */
+    .Part-6 {
+        padding-bottom: 50px;
+    }
+    
+    .Part-6-Data .h1-Part-6 {
+        font-size: 40px;
+        padding-top: 50px;
+    }
+    
+    .Part-6-Data .p-part-6 {
+        width: 100%;
+        font-size: 20px;
+        margin: 20px 0;
+    }
+    
+    .Part-6-Content .Row {
+        padding: 0 15px;
+    }
+    
+    .IMG-6 {
+        margin: 5% auto;
+        display: block;
+    }
+
+    .part-6-BTN-Div {
+        margin-left: 5%;
+    }
+    
+    .Order-BTN-Part-6 {
+        padding: 10px 40px;
+        font-size: 20px;
+        margin: 0 auto;
+        display: block;
+    }
+    
+    /* Part 7 */
+    .Part-7-Data {
+        padding: 50px 15px;
+    }
+
+    .Part-7-Data .h1-Part-7 {
+        font-size: 40px;
+        margin-left: 0;
+    }
+    
+    .Part-7-Data .p-Part-7 {
+        width: 80%;
+        font-size: 20px;
+        margin: 20px 0;
+    }
+    
+    .Part-7-Content .Row {
+        margin-left: 0;
+    }
+    
+    .Part-7-Content .Col {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .Part-7-Icon .Part-7-Img {
+        margin: 0 auto;
+    }
+    
+    .Col-Data {
+        text-align: center;
+    }
+    
+    .p-Col-Data {
+        width: 100%;
+        margin-left: 10%;
+    }
+    
+    /* Part 8 */
+    .Part-8 {
+        padding: 50px 15px;
+    }
+
+    .Part-8-Data {
+        width: 100%;
+        padding-left: 0;
+        padding-right: 100%;
+    }
+    
+    .Part-8-Data .p-Part-8 {
+        width: 100%;
+        font-size: 30px;
+        text-align: center;
+        margin-right: 100%;
+    }
+    
+    .Part-8-Data .DrName-Part-8 {
+        font-size: 30px;
+        margin: 20px 0;
+    }
+    
+    /* Footer */
+    #Footer {
+        padding: 50px 15px;
+    }
+    
+    #Footer .Row {
+        flex-direction: column;
+    }
+    
+    .Footer {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    
+    .Footer .P-Footer {
+        width: 100%;
+        padding-left: 20%;
+    }
+}

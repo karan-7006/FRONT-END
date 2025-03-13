@@ -1,0 +1,647 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Utility Class */
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* Header start */
+.header {
+    background-color: #3d5f00;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.logo {
+    width: 70px;
+}
+
+.lists .list {
+    display: inline-block;
+    margin: 10px;
+}
+
+.list .nav-a {
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 500;
+    font-family: "Roboto";
+    color: white;
+}
+
+.icon {
+    color: white;
+    font-size: 24px;
+}
+
+.main-content {
+    background-image: url(/Images/Main.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.data {
+    color: #3d5f00;
+    font-family: "Alegreya Sans";
+    padding: 70px 0;
+}
+
+.data .h1-header {
+    font-size: clamp(24px, 7vw, 67px);
+    text-transform: uppercase;
+    font-weight: 800;
+    font-family: "Alegreya Sans";
+}
+
+.data .h3-header {
+    font-size: clamp(20px, 7vw, 54px);
+    font-weight: 500;
+}
+
+.hr {
+    width: 300px;
+    margin: 10px 0;
+}
+
+.data .p-header {
+    font-size: clamp(18px, 3.2vw, 21px);
+    color: #3d5f00;
+    font-weight: 400;
+    font-family: "Roboto";
+    width: 40%;
+    margin: 20px 0;
+}
+
+.data .OrderBTN {
+    background-color: #3d5f00;
+    border: none;
+    padding: 15px 20px;
+    font-size: 21px;
+    font-weight: 500;
+    border-radius: 20px 0 20px 0;
+    color: white;
+    font-family: "Roboto";
+    cursor: pointer;
+}
+
+.data .Arrow {
+    font-size: 21px;
+    border: none;
+    padding: 15px;
+    background-color: #3d5f00;
+    border-radius: 10px 0 10px 0;
+    margin-left: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+/* Header End */
+
+/* AboutUs Start */
+
+#AboutUs {
+    padding: 30px 0;
+}
+.AboutUs {
+    text-align: center;
+    color: #3d5f00;
+    font-family: "Roboto";
+    margin: 100px 0;
+}
+
+.AboutUs .h2-AboutUs {
+    opacity: 0.149;
+    font-size: 100px;
+    font-weight: 700;
+}
+
+.AboutUs .p-AboutUS {
+    font-size: 25px;
+    width: 60%;
+    font-weight: 400;
+    margin: 20px auto;
+}
+
+.About-Main .Row {
+    display: flex;
+}
+
+.About-Main .Row .Col {
+    width: 50%;
+}
+
+.About-Content {
+    color: #3d5f00;
+    font-family: "Roboto";
+}
+
+.About-Content .h3-about {
+    font-size: 54px;
+    font-weight: 500;
+}
+
+.About-Content .para {
+    font-size: 25px;
+    font-weight: 400;
+    width: 80%;
+    margin: 20px 0;
+}
+
+.About-Content .para1 {
+    font-size: 25px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.About-Content .ReadBTN {
+    background-color: #3d5f00;
+    border: none;
+    padding: 15px 20px;
+    font-size: 21px;
+    font-weight: 500;
+    border-radius: 20px 0 20px 0;
+    color: white;
+    font-family: "Roboto";
+    cursor: pointer;
+}
+
+.About-Content .Arrow {
+    font-size: 21px;
+    border: none;
+    padding: 15px;
+    background-color: #3d5f00;
+    border-radius: 10px 0 10px 0;
+    margin-left: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+.About-Main .AboutImage {
+    background-image: linear-gradient(rgba(143,146,59,0.5),rgba(143,146,59,0.5)), url(/Images/about.png);
+    background-size: 100% 100%;
+    width: 70%;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+    height: 400px;
+}
+
+.AboutImage .YoutubeIcon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+    color: red;
+    z-index: 2;
+}
+
+.About-Main-1 .Row {
+    display: flex;
+    margin-top: 150px;
+}
+
+.About-Main-1 .Row .Col {
+    width: 50%;
+}
+
+.About-Content-1 {
+    color: #3d5f00;
+    font-family: "Roboto";
+}
+
+.About-Content-1 .h3-about {
+    font-size: 54px;
+    font-weight: 500;
+}
+
+.About-Content-1 .para {
+    font-size: 25px;
+    font-weight: 400;
+    width: 80%;
+    margin: 20px 0;
+}
+
+.About-Content-1 .para1 {
+    font-size: 25px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.About-Content-1 .ReadBTN {
+    background-color: #3d5f00;
+    border: none;
+    padding: 15px 20px;
+    font-size: 21px;
+    font-weight: 500;
+    border-radius: 20px 0 20px 0;
+    color: white;
+    font-family: "Roboto";
+    cursor: pointer;
+}
+
+.About-Content-1 .Arrow {
+    font-size: 21px;
+    border: none;
+    padding: 15px;
+    background-color: #3d5f00;
+    border-radius: 10px 0 10px 0;
+    margin-left: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+.About-Main-1 .AboutImage-1 {
+    background-image: linear-gradient(rgba(143,146,59,0.5),rgba(143,146,59,0.5)), url(/Images/about.png);
+    background-size: 100% 100%;
+    width: 70%;
+    margin-right: 100%;
+    position: relative;
+    z-index: 1;
+    height: 400px;
+}
+
+.AboutImage-1 .YoutubeIcon-1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+    color: red;
+    z-index: 2;
+}
+/* AboutUs End */
+
+
+/* Services Start */
+.Services {
+    text-align: center;
+    color: #3d5f00;
+    font-family: "Roboto";
+    margin: 100px 0;
+}
+
+.h2-Services {
+    opacity: 0.149;
+    font-size: 100px;
+    font-weight: 700;
+}
+
+.p-Services {
+    font-size: 25px;
+    width: 60%;
+    font-weight: 400;
+    margin: 20px auto;
+}
+
+.Services-Content {
+    margin: 20px 0;
+}
+
+.Services-Content .Row {
+    display: flex;
+    gap: 30px;
+}
+
+.Services-Content .Col-70 {
+    width: 70%;
+}
+
+.Services-Content .Col-30 {
+    width: 30%;
+}
+
+.Services-Data .Content-Data {
+    display: flex;
+    justify-content: space-between;
+    font-size: 50px;
+    color: #3d5f00;
+    font-weight: 500;
+    font-family: "Roboto";
+}
+
+.Services-Data .Content-Data .Service-Price {
+    margin-right: 120px;
+}
+
+.Services-Data .Service-Card {
+    font-size: 25px;
+    color: #3d5f00;
+    font-weight: 400;
+    font-family: "Roboto";
+    width: 90%;
+    margin: 20px 0;
+}
+
+.Services-Data .Buy-BTN {
+    background-color: #3d5f00;
+    border: none;
+    width: 195px;
+    height: 62px;
+    font-size: 25px;
+    font-weight: 500px;
+    border-radius: 30px 0 30px 0;
+    color: white;
+}
+
+.Service-Image-1 {
+    width: 100%;
+    height: 100%;
+}
+/* Services End */
+
+/* Special Start  */
+.Special {
+    background-image: url(/Images/Special.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin-top: 120px;
+}
+
+.Special-Content {
+    color: #3d5f00;
+    font-family: "Roboto";
+    padding: 50px 0;
+}
+
+.Special-Name {
+    font-size: 33px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+.Discount {
+    font-size: 58px;
+    font-weight: 700;
+
+}
+
+.Products {
+    font-size: 33px;
+    letter-spacing: 14px;
+    font-weight: 500;
+
+}
+
+.Special-Para {
+    font-size: 25px;
+    font-weight: 400;
+    width: 45%;
+    margin: 40px;
+    margin-left: 0%;
+}
+
+.Special-BTN {
+    width: 210px;
+    height: 65px;
+    border: none;
+    border-radius: 30px 0 30px 0;
+    background-color: #3d5f00;
+    font-size: 21px;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "Roboto";
+}
+/* Special End  */
+
+/* Pricing Start  */
+.Pricing {
+    text-align: center;
+    color: #3d5f00;
+    font-family: "Roboto";
+    margin: 100px 0;
+}
+
+.Pricing .h2-Pricing {
+    opacity: 0.149;
+    font-size: 100px;
+    font-weight: 700;
+}
+
+.Pricing .P-Pricing {
+    font-size: 25px;
+    width: 60%;
+    font-weight: 400;
+    margin: 20px auto;
+    width: 53%;
+}
+
+.Price-Content .Row {
+    display: flex;
+    gap: 50px;
+}
+
+.Price-Content .Row .Col {
+    width: 33.33%;
+}
+
+.Price-Card {
+    background-color: #608b14;
+    text-align: center;
+    font-family: "Roboto";
+    color: #ffffff;
+    padding: 30px 0px;
+}
+
+.Price-Card .h3-Price {
+    font-size: 42px;
+    font-weight: 400;
+}
+
+.Price-Card .h2-Card-Price {
+    font-size: 58px;
+    font-weight: 700;
+}
+
+.Price-Data {
+    background-color: #f1f1f1;
+    text-align: center;
+    padding: 40px 0px;
+}
+
+.Price-Data .h4-Price {
+    font-size: 29px;
+    color: #3d5f00;
+    font-weight: 400;
+    font-family: "Roboto";
+    margin: 10px 0;
+}
+
+.Price-Data .Buy-BTN {
+    background-color: #3d5f00;
+    border: none;
+    width: 195px;
+    height: 62px;
+    font-size: 25px;
+    font-weight: 500px;
+    border-radius: 30px 0 30px 0;
+    color: white;
+    margin-top: 40px;
+}
+/* Pricing End  */
+
+/* Special-2 Start  */
+.Special-2 {
+    background-image: url(/Images/Special-2.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin-top: 120px;
+}
+
+.Special-2-Content {
+    color: #3d5f00;
+    font-family: "Roboto";
+    padding: 50px 0;
+    text-align: right;
+}
+
+.Special-2-Content .Special-2-Para {
+    text-align: right;
+    width: 35%;
+    margin-left: 65%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+/* Special-2 End  */
+
+/* Blog Start  */
+.Blog {
+    text-align: center;
+    color: #3d5f00;
+    font-family: "Roboto";
+    margin: 100px 0;
+}
+
+.Blog .h2-Blog {
+    opacity: 0.149;
+    font-size: 100px;
+    font-weight: 700;
+}
+
+.Blog .P-Blog {
+    font-size: 25px;
+    width: 60%;
+    font-weight: 400;
+    margin: 20px auto;
+    width: 53%;
+}
+
+.Blog-Content .Row {
+    display: flex;
+    gap: 50px;
+}
+
+.Blog-Content .Row .Col {
+    width: 33.33%;
+}
+
+.Card-Content-Data {
+    background-color: #f1f1f1;
+}
+
+.Card-Content-Data .Card-Data {
+    color: #3d5f00;
+    font-family: "Roboto";
+    margin-left: 40px;
+}
+
+.h1-Blog-Data {
+    font-size: 33px;  
+    font-weight: 500;  
+    padding-top: 40px;
+    padding-bottom: 10px;
+}
+
+.Card-Data .P-Blog-Data {
+    font-size: 25px;
+    font-weight: 400;
+    margin-top: 10px;
+    width: 86%;
+}
+
+.Card-Data .Blog-BTN {
+    width: 153px;
+    height: 46px;
+    border: none;
+    border-radius: 20px 0 20px 0;
+    background-color: #3d5f00;
+    font-size: 17px;
+    color: #ffffff;
+    font-weight: 500;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+/* Blog End  */
+
+/* Footer Start */
+#Footer {
+    padding: 50px 0;
+    background-color: #3d5f00;
+    margin-top: 50px;
+}
+
+#Footer .Row {
+    display: flex;
+}
+
+#Footer .Row .Col-40 {
+    width: 40%;
+}
+
+#Footer .Row .Col-60 {
+    width: 60%;
+}
+
+.Col-60 .Row .Col {
+    width: 33.33%;
+}
+
+.Footer .h2-Footer {
+    font-size: clamp(18px, 3vw, 31px);
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "Nunito";
+}
+
+.Footer .ul-Footer {
+    list-style: none;
+    margin-top: 20px;
+}
+
+.ul-Footer .li-Footer {
+    margin: 10px 0;
+}
+
+.ul-Footer .li-Footer .a-Footer {
+    text-decoration: none;
+    color: white;
+    font-size: clamp(18px, 3vw, 24px);
+    font-weight: 400;
+    font-family: "Nunito";
+}
+
+.Footer .P-Footer {
+
+    font-size: clamp(18px, 3vw, 24px);
+    color: #ffffff;
+    width: 80%;
+    margin:  20px 0;
+    font-weight: 400;
+    font-family: "Nunito";
+}
+.Footer-Icon i{
+    font-size: clamp(18px, 3vw, 24px);
+    color: white;
+    margin: 0 5px;
+}
+/* Footer End */

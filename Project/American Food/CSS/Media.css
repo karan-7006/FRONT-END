@@ -1,0 +1,59 @@
+@media only screen and (max-width:1160px) {
+    
+}
+@media only screen and (max-width:992px) {
+    
+}
+@media only screen and (max-width:768px) {
+    .lists {
+        display: none;
+    }
+    .icon .Search {
+        display: none;
+    }
+    .icon .Bar {
+        display: block;
+    }
+    .Services-Content .Row {
+        display: block;
+        gap: 30px;
+    }
+    .Services-Content .Col-70 {
+        width: 100%;
+    }
+    .Services-Content .Col-30 {
+        width: 100%;
+    }
+    .p-Services{
+        width: 90%;
+    }
+    .Pricing .P-Pricing {
+        width: 90%;
+    }
+    .Price-Content .Row .Col {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .Price-Content .Row {
+        flex-direction: column;
+    }
+    #Footer .Row {
+        display: block;
+    }
+    #Footer .Row .Col-40 {
+        width: 100%;
+        text-align: center;
+    }
+    
+    #Footer .Row .Col-60 {
+        width: 100%;
+        text-align: center;
+        margin-top: 20px;
+    }
+    .Col-60 .Row .Col {
+        width: 100%;
+    }
+    .Footer .P-Footer{
+        width: 100%;
+    }
+}

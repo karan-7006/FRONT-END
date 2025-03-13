@@ -1,0 +1,615 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Utility Class */
+.Container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* Header Start */
+.Header {
+    background-image: url(/Images/Header-Image.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.Container-1 {
+    background-color: rgba(24, 93, 196, 0.5);
+}
+
+.Navbar {
+    background-color: rgba(24, 93, 196, 0.5);
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.Logo {
+    width: 70px;
+    margin-right: 40%;
+}
+
+.lists .list {
+    display: inline-block;
+    margin: 10px;
+}
+
+.list .nav-a {
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 600;
+    font-family: monospace;
+    color: white;
+    padding: 0 20px;
+}
+
+.Icon {
+    color: white;
+    font-size: clamp(18px, 3vw, 24px);
+    margin-right: 40px;
+    padding: 0 20px;
+    cursor: pointer;
+}
+
+.Header-Content {
+    padding-bottom: 20%;
+    padding-top: 10%;
+
+}
+
+.h1-Header {
+    font-size: clamp(20px, 7vw, 75px);
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: sans-serif;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.p-Header {
+    font-size: clamp(14px, 7vw, 30px);
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 400;
+    font-family: sans-serif;
+    text-align: center;
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.Header-BTN {
+    border-radius: 32px;
+    border: none;
+    padding: 10px 80px;
+    background-color: #edc315;
+    font-size: 25px;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: sans-serif;
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 40%;
+    cursor: pointer;
+}
+
+/* Header End */
+
+/* 2-Part start */
+#Part-2 {
+    background-color: #5A9FE6;
+    padding: 50px 30px;
+}
+
+.h1-Part-2 {
+    font-size: clamp(20px, 7vw, 75px);
+    color: #ffffff;
+    font-weight: 700;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.p-part-2 {
+    width: 60%;
+    font-size: clamp(14px, 7vw, 30px);
+    color: #ffffff;
+    font-weight: 400;
+    font-family: sans-serif;
+    text-align: center;
+    margin-left: 20%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.Part-2-Content .Row {
+    display: flex;
+    gap: 50px;
+    margin-right: 15%;
+}
+
+.Part-2-Content .Row .Col {
+    width: 33.33%;
+}
+
+.Part-2-Card {
+    margin-left: 35%;
+}
+
+.Part-2-Card-Border .Img {
+    border-radius: 50%;
+}
+
+.Part-2-Card-Details {
+    margin-left: 0;
+    margin-right: 24%;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.Part-2-Card-Details .h3-Part-2-Card-details {
+    width: 100%;
+    font-size: 37px;
+    color: #ffffff;
+    font-weight: 700;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 85px;
+}
+
+.Part-2-Card-Details .p-Part-2-Card-Details {
+    width: 100%;
+    font-size: 22px;
+    color: #ffffff;
+    font-weight: 400;
+    margin-left: 85px;
+}
+
+/* 2-Part End */
+
+/* 3-Part Start */
+
+#Part-3 {
+    background-image: linear-gradient(rgba(244, 205, 49, 0.7), rgba(244, 205, 49, 0.7)), url(/Images/Part-2-Img2.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.h1-Part-3 {
+    font-size: 75px;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: sans-serif;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.p-part-3 {
+    width: 55%;
+    font-size: 30px;
+    color: #ffffff;
+    font-weight: 400;
+    font-family: sans-serif;
+    text-align: center;
+    margin-left: 20%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.Part-3-Content .Row {
+    display: flex;
+    gap: 50px;
+    margin-right: 15%;
+}
+
+.Part-3-Content .Row .Col {
+    width: 33.33%;
+    padding: 20px 40px;
+}
+
+.Part-3-Content .Part-3-Data1 {
+    border: 10px solid white;
+    border-radius: 131px;
+    width: 262px;
+    height: 262px;
+    margin-top: 100px;
+    margin-bottom: 150px;
+    margin-left: 100px;
+}
+
+.Part-3-Data1 .h2-Part-3 {
+    font-size: 53px;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: sans-serif;
+    text-align: center;
+    margin-top: 60px;
+}
+
+.Part-3-Data1 .p-Part-3 {
+
+    font-size: 21px;
+    color: #ffffff;
+    font-weight: 400;
+    font-family: sans-serif;
+    text-align: center;
+    margin: 10px 0;
+}
+
+/* 3-Part End */
+
+/* 4-Part-Start */
+
+.Part-4 {
+    background-color: #1d69d4;
+}
+
+.Part-4-Content .Row {
+    display: flex;
+    gap: 50px;
+    padding: 150px 100px;
+}
+
+.Part-4-Content .Row .Col {
+    width: 50%;
+}
+
+.Part-4-Data {
+    margin-top: 20%;
+}
+
+.Part-4-Data .h1-Part-4 {
+    font-size: 75px;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: sans-serif;
+}
+
+.Part-4-Data .p-Part-4 {
+    font-size: 30px;
+    color: #ffffff;
+    font-weight: 400;
+    font-family: sans-serif;
+    margin: 50px 0;
+}
+
+.Part-4-Data .Order-BTN {
+    border-radius: 32px;
+    border: none;
+    background-color: #edc315;
+    font-size: 25px;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: sans-serif;
+    text-align: center;
+    padding: 10px 80px;
+    cursor: pointer;
+}
+
+.Part-4-Img .Img-4 {
+    height: 100%;
+    width: 100%;
+}
+
+
+/* 4-Part-End */
+
+/* 5-Part Start */
+
+.Part-5 {
+    background-color: #5584c6;
+}
+
+.Part-5-Content .Row {
+    display: flex;
+    gap: 150px;
+    padding: 150px 100px;
+}
+
+.Part-5-Content .Row .Col {
+    width: 50%;
+}
+
+.Part-5-Img .Img-5 {
+    height: 100%;
+    width: 100%;
+}
+
+.Part-5-Data {
+    margin-top: 20%;
+}
+
+.Part-5-Data .h1-Part-5 {
+    font-size: 75px;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: sans-serif;
+}
+
+.Part-5-Data .p-Part-5 {
+    font-size: 30px;
+    color: #ffffff;
+    font-weight: 400;
+    font-family: sans-serif;
+    margin: 50px 0;
+}
+
+.Part-5-Data .Order-BTN {
+    border-radius: 32px;
+    border: none;
+    background-color: #edc315;
+    font-size: 25px;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: sans-serif;
+    text-align: center;
+    padding: 10px 80px;
+    cursor: pointer;
+}
+
+/* 5-Part End */
+
+/* 6 Part Start */
+.Part-6 {
+    background-color: #1d69d4;
+    padding-bottom: 150px;
+}
+
+.Part-6-Data .h1-Part-6 {
+    font-size: 75px;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: sans-serif;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.Part-6-Data .p-part-6 {
+    width: 55%;
+    font-size: 30px;
+    color: #ffffff;
+    font-weight: 400;
+    font-family: sans-serif;
+    text-align: center;
+    margin-left: 22%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.Part-6-Content .Row {
+    display: flex;
+    gap: 50px;
+    padding: 0 100px;
+}
+
+.Part-6-Content .Row .Col {
+    width: 33.33%;
+    background-color: white;
+    padding: 20px 50px;
+}
+
+.h2-Part-6 {
+    font-size: 37px;
+    color: #739ee3;
+    font-weight: 700;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.IMG-6 {
+    margin-left: 35%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.h2-part-6-price {
+    font-size: 37px;
+    color: #739ee3;
+    font-weight: 700;
+    font-family: sans-serif;
+    text-align: center;
+    margin-top: 10px;
+    margin-top: 10px;
+}
+
+.p-Part-6 {
+    width: 100%;
+    font-size: 22px;
+    color: #739ee3;
+    font-weight: 400;
+    font-family: sans-serif;
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.Order-BTN-Part-6 {
+    padding: 10px 60px;
+    border-radius: 32px;
+    border: none;
+    background-color: #edc315;
+    font-size: 25px;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: sans-serif;
+    text-align: center;
+    margin-left: 10%;
+    cursor: pointer;
+}
+
+/* 6 Part End */
+
+/* 7 Part Start */
+
+.Part-7 {
+    background-color: #5A9FE6;
+}
+
+.Part-7-Data {
+    padding: 100px 200px 100px 100px;
+}
+
+.Part-7-Data .h1-Part-7 {
+    font-size: 75px;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: sans-serif;
+    text-align: center;
+    margin-left: 100px;
+}
+
+.Part-7-Data .p-Part-7 {
+    width: 60%;
+    font-size: 30px;
+    color: #ffffff;
+    font-weight: 400;
+    font-family: sans-serif;
+    text-align: center;
+    margin-left: 23%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+
+.Part-7-Content .Col {
+    display: flex;
+    gap: 30px;
+}
+
+.Part-7-Content .Row {
+    display: flex;
+    gap: 50px;
+    margin-left: 100px;
+}
+
+.Part-7-Content .Row .Col {
+    width: 50%;
+    padding: 20px 20px;
+    padding-bottom: 50px;    
+}
+
+.Part-7-Icon .Part-7-Img {
+    color: white;
+    margin-top: 30px;
+}
+
+.h1-Col-Data {
+    font-size: 37px;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: sans-serif;
+    margin-bottom: 10px;
+}
+
+.p-Col-Data {
+    width: 80%;
+    font-size: 22px;
+    color: #ffffff;
+    font-weight: 400;
+    font-family: sans-serif;
+}
+
+/* 7 Part End */
+
+/* 8 Part start */
+#Part-8 {
+    background-image: linear-gradient(rgba(206, 167, 12, 0.7), rgba(206, 167, 12, 0.7)), url(/Images/Part-2-Img2.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.Part-8 {
+    padding: 100px 100px;
+}
+
+.Part-8-Data .p-Part-8 {
+    width: 75%;
+    font-size: 50px;
+    color: white;
+    font-weight: 400;
+    font-family: sans-serif;
+    text-align: center;
+    margin-top: 20%;
+    margin-left: 15%;
+}
+
+.Part-8-Data .DrName-Part-8 {
+    font-size: 50px;
+    color: white;
+    font-weight: 700;
+    font-family: sans-serif;
+    text-align: center;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* 8 Part End */
+
+/* Footer Start */
+#Footer {
+    padding: 100px 50px;
+    background-color: #303130;
+}
+
+#Footer .Row {
+    display: flex;
+}
+
+#Footer .Row .Col-40 {
+    width: 40%;
+}
+
+#Footer .Row .Col-60 {
+    width: 60%;
+}
+
+.Col-60 .Row .Col {
+    width: 33.33%;
+}
+
+.Footer .h2-Footer {
+    font-size: 31px;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: sans-serif;
+}
+
+.Footer .ul-Footer {
+    list-style: none;
+    margin-top: 20px;
+}
+
+.ul-Footer .li-Footer {
+    margin: 10px 0;
+}
+
+.ul-Footer .li-Footer .a-Footer {
+    text-decoration: none;
+    color: white;
+    font-size: 24;
+    font-weight: 400;
+    font-family: sans-serif;
+}
+
+.Footer .P-Footer {
+
+    font-size: 24px;
+    color: #ffffff;
+    width: 80%;
+    margin: 20px 0;
+    font-weight: 400;
+    font-family: sans-serif;
+}
+.Footer-Icon i{
+    font-size: 24px;
+    color: white;
+    margin: 0 5px;
+}
+/* Footer End */
