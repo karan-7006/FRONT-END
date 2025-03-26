@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Slider</title>
+    <style>
+        .Main {
+            height: 600px;
+            width: 100%;
+            overflow: hidden;
+            position: relative;
+        }
+        .img {
+            display: none;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        button {
+            margin-left: 27%;
+            margin-top: 20px;
+            padding: 10px;
+            font-size: 16px;
+            background-color: royalblue;
+            color: white;
+            border: none;
+            cursor: pointer;
+            opacity: 1;
+            scale: 1;
+        }
+
+        button:hover {
+            background-color: dodgerblue;
+            opacity: 0.7;
+            scale: 1.2;
+        }
+    </style>
+</head>
+<body>
+    <div class="Main">
+        <img src="/Images/Eiffel Tower.jpg" class="img" alt="Eiffel Tower">
+        <img src="/Images/maelifell volcano.jpg" class="img" alt="Maelifell Volcano">
+        <img src="/Images/sunset.jpg" class="img" alt="Sunset">
+        <img src="/Images/Winter.jpg" class="img" alt="Winter">
+    </div>
+
+    <button onclick="slider(-1)">Previous Image</button>
+    <button onclick="slider(1)">Next Image</button>
+
+    <script>
+        let index = 0; 
+        const img_tag = document.getElementsByClassName("img");
+
+        function slider(direction) {
+          
+            for (let i = 0; i < img_tag.length; i++) {
+                img_tag[i].style.display = "none";
+            }
+
+           
+            index += direction;
+
+            // Loop logic for forward and backward navigation
+            if (index < 0) {
+                index = img_tag.length - 1;
+            } else if (index >= img_tag.length) {
+                index = 0;
+            }
+
+            img_tag[index].style.display = "block";
+        }
+
+        slider(0);
+    </script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .Main {
+            height: 600px;
+            width: 100%;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+    <div class="Main">
+        <img src="/Images/Eiffel Tower.jpg" class="img" height="100%" width="100%" alt="">
+        <img src="/Images/maelifell volcano.jpg" class="img" height="100%" width="100%" alt="">
+        <img src="/Images/sunset.jpg" height="100%" class="img" width="100%" alt="">
+        <img src="/Images/Winter.jpg" height="100%" class="img" width="100%" alt="">
+    </div>
+
+    <button onclick="silder()">Next image</button>
+
+    <script>
+
+        let index = 0
+
+        function silder() {
+
+
+            let img_tag = document.getElementsByClassName("img")
+
+            for (let i = 0; i < img_tag.length; i++) {
+
+                img_tag[i].style.display = "none";
+            }
+
+            img_tag[index].style.display = "block";
+            index++;
+
+            if(index == 4){
+                index = 0;
+            }
+
+            // setTimeout(silder,1000)
+
+
+        }
+
+        silder()
+
+    </script>
+
+</body>
+</html>
