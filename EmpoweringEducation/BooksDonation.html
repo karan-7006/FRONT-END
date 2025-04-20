@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Donation - Empowering Education (E²)</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        .gradient-text {
+            background: linear-gradient(45deg, #4b79a1, #ff6f61);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        #imagePreview {
+            max-height: 300px;
+            object-fit: cover;
+        }
+        .well-wishes {
+            animation: fadeIn 1s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
+</head>
+<body class="bg-gray-100" style="background-image: url(/Images/Books3.jpg); background-size: 100% 100%; background-repeat: no-repeat;">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex">
+                    <div class="flex-shrink-0 flex items-center">
+                        <h1 class="text-2xl font-bold gradient-text">Empowering Education (E²)</h1>
+                    </div>
+                    <div class="hidden sm:ml-6 sm:flex sm:space-x-8" style="margin-top: 15px; padding-bottom: 10px;">
+                        <a href="/HomePage.html" class="text-gray-900 hover:bg-gray-200 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium">Home</a>
+                        <a href="/MarketPlace.html" class="text-gray-900 hover:bg-gray-200 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium">Marketplace</a>
+                        <a href="/Contact.html" class="text-gray-900 hover:bg-gray-200 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Book Donation Section -->
+    <div class="container mx-auto px-4 py-12">
+        <div class="max-w-2xl mx-auto bg-white shadow-md rounded-lg p-8">
+            <h2 class="text-3xl font-bold text-center mb-8 text-red-600">Donate Your Books</h2>
+            
+            <form id="bookDonationForm" class="space-y-6">
+                <div>
+                    <label for="bookImage" class="block text-sm font-medium text-gray-700 mb-2">
+                        Upload Book Image
+                    </label>
+                    <input type="file" id="bookImage" accept="image/*" 
+                        class="block w-full text-sm text-gray-500
+                        file:mr-4 file:py-2 file:px-4
+                        file:rounded-full file:border-0
+                        file:text-sm file:font-semibold
+                        file:bg-red-50 file:text-red-700
+                        hover:file:bg-red-100">
+                    <img id="imagePreview" class="mt-4 hidden w-full" alt="Image Preview">
+                </div>
+
+                <div>
+                    <label for="bookTitle" class="block text-sm font-medium text-gray-700 mb-2">
+                        Book Title
+                    </label>
+                    <input type="text" id="bookTitle" required
+                        class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-red-300 focus:ring focus:ring-red-200">
+                </div>
+
+                <div>
+                    <label for="bookCategory" class="block text-sm font-medium text-gray-700 mb-2">
+                        Book Category
+                    </label>
+                    <select id="bookCategory" required
+                        class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-red-300 focus:ring focus:ring-red-200">
+                        <option value="">Select Category</option>
+                        <option value="engineering">Engineering</option>
+                        <option value="science">Science</option>
+                        <option value="arts">Arts & Humanities</option>
+                        <option value="management">Management</option>
+                        <option value="programming">Programming</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="bookCondition" class="block text-sm font-medium text-gray-700 mb-2">
+                        Book Condition
+                    </label>
+                    <select id="bookCondition" required
+                        class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-red-300 focus:ring focus:ring-red-200">
+                        <option value="">Select Condition</option>
+                        <option value="new">New</option>
+                        <option value="very-good">Very Good</option>
+                        <option value="good">Good</option>
+                        <option value="moderate">Moderate</option>
+                        <option value="poor">Poor</option>
+                    </select>
+                </div>
+
+                <div id="creditPointsSection" class="hidden">
+                    <label class="block text-sm font-medium text-gray-700 mb-2">
+                        Donation Credit Points
+                    </label>
+                    <div id="creditPoints" class="text-2xl font-bold text-green-600"></div>
+                </div>
+
+                <div id="wellWishesSection" class="hidden mt-6 text-center well-wishes">
+                    <h3 class="text-2xl font-semibold text-red-500 mb-4">Thank You for Your Donation!</h3>
+                    <div id="wellWishesMessage" class="text-gray-700"></div>
+                </div>
+
+                <div class="text-center">
+                    <button type="submit" 
+                        class="bg-red-500 text-white px-6 py-3 rounded-md hover:bg-red-600 transition duration-300">
+                        Donate Book
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer (Similar to other pages) -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <p class="text-gray-400">&copy; 2024 Empowering Education (E²). All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const bookImage = document.getElementById('bookImage');
+            const imagePreview = document.getElementById('imagePreview');
+            const bookTitle = document.getElementById('bookTitle');
+            const bookCategory = document.getElementById('bookCategory');
+            const bookCondition = document.getElementById('bookCondition');
+            const bookDonationForm = document.getElementById('bookDonationForm');
+            const creditPointsSection = document.getElementById('creditPointsSection');
+            const creditPoints = document.getElementById('creditPoints');
+            const wellWishesSection = document.getElementById('wellWishesSection');
+            const wellWishesMessage = document.getElementById('wellWishesMessage');
+
+            // Well wishes array
+            const wellWishes = [
+                "Your generosity will help another student achieve their dreams!",
+                "You've just made someone's educational journey easier.",
+                "Thank you for sharing knowledge and supporting learning.",
+                "Your kindness can change a student's life forever.",
+                "Education is the most powerful weapon, and you just contributed to it."
+            ];
+
+            // Image preview
+            bookImage.addEventListener('change', function(event) {
+                const file = event.target.files[0];
+                if (file) {
+                    const reader = new FileReader();
+                    reader.onload = function(e) {
+                        imagePreview.src = e.target.result;
+                        imagePreview.classList.remove('hidden');
+                    }
+                    reader.readAsDataURL(file);
+                }
+            });
+
+            // Credit points calculation
+            function calculateCreditPoints() {
+                if (!bookCategory.value || !bookCondition.value) return 0;
+
+                const basePoints = {
+                    'engineering': 50,
+                    'science': 45,
+                    'arts': 40,
+                    'management': 55,
+                    'programming': 60
+                };
+
+                const conditionFactor = {
+                    'new': 1.5,
+                    'very-good': 1.2,
+                    'good': 1.0,
+                    'moderate': 0.7,
+                    'poor': 0.5
+                };
+
+                const baseCategPoints = basePoints[bookCategory.value] || 40;
+                const conditionMultiplier = conditionFactor[bookCondition.value] || 1.0;
+
+                return Math.round(baseCategPoints * conditionMultiplier);
+            }
+
+            // Form submission
+            bookDonationForm.addEventListener('submit', function(event) {
+                event.preventDefault();
+                
+                // Basic validation
+                if (!bookImage.files.length) {
+                    alert('Please upload a book image');
+                    return;
+                }
+
+                // Calculate credit points
+                const points = calculateCreditPoints();
+                creditPoints.textContent = `+${points} Points`;
+                creditPointsSection.classList.remove('hidden');
+
+                // Select a random well wish
+                const randomWish = wellWishes[Math.floor(Math.random() * wellWishes.length)];
+                wellWishesMessage.textContent = randomWish;
+                wellWishesSection.classList.remove('hidden');
+
+                // Collect form data
+                const bookData = {
+                    title: bookTitle.value,
+                    category: bookCategory.value,
+                    condition: bookCondition.value,
+                    image: imagePreview.src,
+                    creditPoints: points
+                };
+
+                // In a real application, you would send this data to a backend
+                console.log('Book Donation Data:', bookData);
+
+                // Reset form
+                bookDonationForm.reset();
+                imagePreview.classList.add('hidden');
+            });
+
+            // Reset well wishes and credit points when form is reset
+            bookCategory.addEventListener('change', function() {
+                creditPointsSection.classList.add('hidden');
+                wellWishesSection.classList.add('hidden');
+            });
+
+            bookCondition.addEventListener('change', function() {
+                creditPointsSection.classList.add('hidden');
+                wellWishesSection.classList.add('hidden');
+            });
+        });
+    </script>
+</body>
+</html>
