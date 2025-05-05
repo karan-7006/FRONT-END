@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Text and Color</title>
+    <style>
+        p {
+            font-size: 20px;
+            text-align: center;
+            margin-top: 20%;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <p id="myParagraph">Hello World!!</p>
+
+    <script>
+        // Use setTimeout to delay the changes
+        setTimeout(function() {
+            // Select the paragraph by its ID
+            const paragraph = document.getElementById('myParagraph');
+
+            // Change the text inside the paragraph using innerHTML
+            paragraph.innerHTML = 'JavaScript is fun!';
+
+            // Change the color of the paragraph to blue
+            paragraph.style.color = 'blue';
+        }, 3000); // 3-second delay
+    </script>
+</body>
+</html>
