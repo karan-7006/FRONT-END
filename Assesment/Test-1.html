@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Booking Form</title>
+    <link rel="stylesheet" href="/Test-1.css">
+</head>
+<body>
+    <h1>Exquisite Dining Reservation</h1>
+    <div id="booking-form-container"></div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const container = document.getElementById('booking-form-container');
+            
+            // Create form element
+            const form = document.createElement('form');
+            form.id = 'bookingForm';
+            
+            // Create booking type selection
+            const bookingTypeGroup = createFormGroup('bookingType', 'Choice of booking:');
+            const bookingTypeSelect = document.createElement('select');
+            bookingTypeSelect.id = 'bookingType';
+            bookingTypeSelect.name = 'bookingType';
+            bookingTypeSelect.required = true;
+            
+            // Add default option
+            const defaultOption = document.createElement('option');
+            defaultOption.value = '';
+            defaultOption.textContent = '-- Select booking type --';
+            defaultOption.selected = true;
+            defaultOption.disabled = true;
+            bookingTypeSelect.appendChild(defaultOption);
+            
+            // Add booking options
+            const bookingOptions = [
+                { value: 'full', text: 'Full day booking' },
+                { value: 'half', text: 'Half day booking' },
+                { value: 'hourly', text: 'Hourly booking' }
+            ];
+            
+            bookingOptions.forEach(option => {
+                const optionElement = document.createElement('option');
+                optionElement.value = option.value;
+                optionElement.textContent = option.text;
+                bookingTypeSelect.appendChild(optionElement);
+            });
+            
+            bookingTypeGroup.querySelector('.input-container').appendChild(bookingTypeSelect);
+            form.appendChild(bookingTypeGroup);
+            
+            // Create personal information fields
+            const fields = [
+                { id: 'name', label: 'User name:', type: 'text' },
+                { id: 'mobile', label: 'Mobile Number:', type: 'tel' },
+                { id: 'email', label: 'Email:', type: 'email' },
+                { id: 'persons', label: 'No of person:', type: 'number', min: '1' }
+            ];
+            
+            fields.forEach(field => {
+                const group = createFormGroup(field.id, field.label);
+                const input = document.createElement('input');
+                input.type = field.type;
+                input.id = field.id;
+                input.name = field.id;
+                input.required = true;
+                
+                if (field.type === 'number') {
+                    input.min = field.min;
+                }
+                
+                group.querySelector('.input-container').appendChild(input);
+                form.appendChild(group);
+            });
+            
+            // Create date field (initially hidden)
+            const dateGroup = createFormGroup('date', 'Date:');
+            dateGroup.classList.add('hidden');
+            const dateInput = document.createElement('input');
+            dateInput.type = 'date';
+            dateInput.id = 'date';
+            dateInput.name = 'date';
+            dateInput.required = true;
+            dateGroup.querySelector('.input-container').appendChild(dateInput);
+            form.appendChild(dateGroup);
+            
+            // Create time field (initially hidden)
+            const timeGroup = createFormGroup('time', 'Time:');
+            timeGroup.classList.add('hidden');
+            const timeInput = document.createElement('input');
+            timeInput.type = 'time';
+            timeInput.id = 'time';
+            timeInput.name = 'time';
+            timeInput.required = true;
+            timeGroup.querySelector('.input-container').appendChild(timeInput);
+            form.appendChild(timeGroup);
+            
+            // Create slot selection (initially hidden)
+            const slotGroup = createFormGroup('slot', 'Slot:');
+            slotGroup.classList.add('hidden');
+            const slotSelect = document.createElement('select');
+            slotSelect.id = 'slot';
+            slotSelect.name = 'slot';
+            slotSelect.required = true;
+            
+            const slotOptions = [
+                { value: '', text: '-- Select slot --', disabled: true, selected: true },
+                { value: 'breakfast', text: 'Breakfast' },
+                { value: 'lunch', text: 'Lunch' },
+                { value: 'dinner', text: 'Dinner' }
+            ];
+            
+            slotOptions.forEach(option => {
+                const optionElement = document.createElement('option');
+                optionElement.value = option.value;
+                optionElement.textContent = option.text;
+                if (option.disabled) optionElement.disabled = true;
+                if (option.selected) optionElement.selected = true;
+                slotSelect.appendChild(optionElement);
+            });
+            
+            slotGroup.querySelector('.input-container').appendChild(slotSelect);
+            form.appendChild(slotGroup);
+            
+            // Create submit button
+            const submitGroup = document.createElement('div');
+            submitGroup.className = 'form-group';
+            const submitButton = document.createElement('button');
+            submitButton.type = 'submit';
+            submitButton.textContent = 'Submit Booking';
+            submitGroup.appendChild(submitButton);
+            form.appendChild(submitGroup);
+            
+            // Add event listener for booking type selection
+            bookingTypeSelect.addEventListener('change', function() {
+                const selectedValue = this.value;
+                
+                // Reset - hide all conditional fields
+                dateGroup.classList.add('hidden');
+                timeGroup.classList.add('hidden');
+                slotGroup.classList.add('hidden');
+                
+                // Show relevant fields based on selection
+                if (selectedValue === 'full') {
+                    // Full day booking: only date
+                    dateGroup.classList.remove('hidden');
+                } else if (selectedValue === 'half') {
+                    // Half day booking: date and slot
+                    dateGroup.classList.remove('hidden');
+                    slotGroup.classList.remove('hidden');
+                } else if (selectedValue === 'hourly') {
+                    // Hourly booking: date and time
+                    dateGroup.classList.remove('hidden');
+                    timeGroup.classList.remove('hidden');
+                }
+            });
+            
+            // Form submission handler
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                // Collect form data
+                const formData = new FormData(form);
+                let bookingData = {};
+                
+                for (let [key, value] of formData.entries()) {
+                    bookingData[key] = value;
+                }
+                
+                // Create a nice confirmation message
+                const confirmationMessage = document.createElement('div');
+                confirmationMessage.className = 'confirmation-message';
+                
+                const confirmHeader = document.createElement('h2');
+                confirmHeader.textContent = 'Booking Confirmed!';
+                confirmationMessage.appendChild(confirmHeader);
+                
+                const confirmDetails = document.createElement('div');
+                confirmDetails.className = 'confirmation-details';
+                
+                // Add all booking details in a nicely formatted way
+                const detailsList = [
+                    { label: 'Name', value: bookingData.name },
+                    { label: 'Contact', value: bookingData.mobile },
+                    { label: 'Email', value: bookingData.email },
+                    { label: 'Party Size', value: bookingData.persons + ' people' },
+                    { label: 'Booking Type', value: (() => {
+                        switch(bookingData.bookingType) {
+                            case 'full': return 'Full Day';
+                            case 'half': return 'Half Day';
+                            case 'hourly': return 'Hourly';
+                            default: return bookingData.bookingType;
+                        }
+                    })() },
+                    { label: 'Date', value: (() => {
+                        const date = new Date(bookingData.date);
+                        return date.toLocaleDateString('en-US', { 
+                            weekday: 'long', 
+                            year: 'numeric', 
+                            month: 'long', 
+                            day: 'numeric' 
+                        });
+                    })() }
+                ];
+                
+                // Add conditional fields based on booking type
+                if (bookingData.bookingType === 'half') {
+                    detailsList.push({ 
+                        label: 'Meal', 
+                        value: bookingData.slot.charAt(0).toUpperCase() + bookingData.slot.slice(1) 
+                    });
+                }
+                
+                if (bookingData.bookingType === 'hourly') {
+                    detailsList.push({ 
+                        label: 'Time', 
+                        value: (() => {
+                            const timeParts = bookingData.time.split(':');
+                            let hours = parseInt(timeParts[0]);
+                            const minutes = timeParts[1];
+                            const ampm = hours >= 12 ? 'PM' : 'AM';
+                            hours = hours % 12;
+                            hours = hours ? hours : 12; // the hour '0' should be '12'
+                            return hours + ':' + minutes + ' ' + ampm;
+                        })()
+                    });
+                }
+                
+                detailsList.push({ 
+                    label: 'Booking ID', 
+                    value: 'RES-' + Math.random().toString(36).substr(2, 9).toUpperCase() 
+                });
+                
+                // Create a table for confirmation details
+                const table = document.createElement('table');
+                table.className = 'confirmation-table';
+                
+                detailsList.forEach(item => {
+                    const row = document.createElement('tr');
+                    
+                    const labelCell = document.createElement('td');
+                    labelCell.className = 'label-cell';
+                    labelCell.textContent = item.label + ':';
+                    
+                    const valueCell = document.createElement('td');
+                    valueCell.className = 'value-cell';
+                    valueCell.textContent = item.value;
+                    
+                    row.appendChild(labelCell);
+                    row.appendChild(valueCell);
+                    table.appendChild(row);
+                });
+                
+                confirmDetails.appendChild(table);
+                confirmationMessage.appendChild(confirmDetails);
+                
+                // Thank you message
+                const thankYou = document.createElement('p');
+                thankYou.className = 'thank-you';
+                thankYou.textContent = 'Thank you for choosing Exquisite Dining. We look forward to serving you!';
+                confirmationMessage.appendChild(thankYou);
+                
+                // Close button
+                const closeButton = document.createElement('button');
+                closeButton.textContent = 'New Reservation';
+                closeButton.className = 'close-button';
+                confirmationMessage.appendChild(closeButton);
+                
+                // Clear the form container and add the confirmation
+                container.innerHTML = '';
+                container.appendChild(confirmationMessage);
+                
+                console.log(bookingData);
+                
+                // Add event listener to close button to reset the form
+                closeButton.addEventListener('click', function() {
+                    container.innerHTML = '';
+                    container.appendChild(form);
+                    form.reset();
+                    dateGroup.classList.add('hidden');
+                    timeGroup.classList.add('hidden');
+                    slotGroup.classList.add('hidden');
+                });
+            });
+            
+            // Helper function to create form groups
+            function createFormGroup(id, labelText) {
+                const group = document.createElement('div');
+                group.className = 'form-group';
+                
+                const label = document.createElement('label');
+                label.setAttribute('for', id);
+                label.textContent = labelText;
+                
+                const inputContainer = document.createElement('div');
+                inputContainer.className = 'input-container';
+                
+                group.appendChild(label);
+                group.appendChild(inputContainer);
+                
+                return group;
+            }
+            
+            // Add form to container
+            container.appendChild(form);
+        });
+    </script>
+</body>
+</html>
