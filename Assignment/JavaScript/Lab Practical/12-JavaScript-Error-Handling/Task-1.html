@@ -12,20 +12,17 @@
     <script>
         function divideByZero(num) {
             try {
-                // Attempt to divide by zero
                 if (num === 0) {
                     throw new Error("Cannot divide by zero.");
                 }
                 let result = 10 / num;
                 document.getElementById("result").textContent = `Result: ${result}`;
             } catch (error) {
-                // Catch the error and display a message
                 document.getElementById("result").textContent = `Error: ${error.message}`;
             }
         }
 
-        // Example: Try dividing by zero
-        divideByZero(0);  // Change this value to test with other numbers
+        divideByZero(0);
     </script>
 </body>
 </html>
