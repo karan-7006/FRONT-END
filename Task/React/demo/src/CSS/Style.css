@@ -1,0 +1,9 @@
+.ExternalCSS{
+    background-image: linear-gradient(orange, white, green);
+    color: blue;
+    font-size: 40px;
+    text-align: center;
+    padding: 40px;
+    width: 50%;
+    margin: 0 auto;
+}
