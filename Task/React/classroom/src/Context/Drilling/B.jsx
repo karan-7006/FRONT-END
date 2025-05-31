@@ -6,7 +6,7 @@ function B({name, setname}) {
   return (
     <div>
       <h1>Hello, This is B Component</h1>
-        <h1>hello name :- {name}</h1>
+        <h1>Hello name :- {name}</h1>
         <C name={name} setname={setname} />
     </div>
   )
