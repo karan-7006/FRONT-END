@@ -9,8 +9,8 @@ const Task4Q2 = () => {
 
   return (
     <div style={{ textAlign: 'center', marginTop: '2rem' }}>
-      <h1>Count: {count}</h1>
-      <button onClick={handleIncrement} style={{ padding: '10px 20px', fontSize: '16px' }}>
+      <h1 className='display-2 fw-bold mt-3'>Count: {count}</h1>
+      <button className='btn btn-primary mt-3' onClick={handleIncrement} style={{ padding: '10px 20px', fontSize: '16px' }}>
         Increment
       </button>
     </div>

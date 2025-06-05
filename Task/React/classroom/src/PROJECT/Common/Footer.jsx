@@ -1,38 +1,62 @@
-import React from 'react'
+import React from "react";
 
 function Footer() {
   return (
     <div>
-      <footer className="bg-body-tertiary text-center">
-  {/* Grid container */}
-  <div className="container p-4 pb-0">
-    {/* Section: Social media */}
-    <section className="mb-4">
-      {/* Facebook */}
-      <a data-mdb-ripple-init className="btn text-white btn-floating m-1" style={{backgroundColor: '#3b5998'}} href="#!" role="button"><i className="fab fa-facebook-f" /></a>
-      {/* Twitter */}
-      <a data-mdb-ripple-init className="btn text-white btn-floating m-1" style={{backgroundColor: '#55acee'}} href="#!" role="button"><i className="fab fa-twitter" /></a>
-      {/* Google */}
-      <a data-mdb-ripple-init className="btn text-white btn-floating m-1" style={{backgroundColor: '#dd4b39'}} href="#!" role="button"><i className="fab fa-google" /></a>
-      {/* Instagram */}
-      <a data-mdb-ripple-init className="btn text-white btn-floating m-1" style={{backgroundColor: '#ac2bac'}} href="#!" role="button"><i className="fab fa-instagram" /></a>
-      {/* Linkedin */}
-      <a data-mdb-ripple-init className="btn text-white btn-floating m-1" style={{backgroundColor: '#0082ca'}} href="#!" role="button"><i className="fab fa-linkedin-in" /></a>
-      {/* Github */}
-      <a data-mdb-ripple-init className="btn text-white btn-floating m-1" style={{backgroundColor: '#333333'}} href="#!" role="button"><i className="fab fa-github" /></a>
-    </section>
-    {/* Section: Social media */}
-  </div>
-  {/* Grid container */}
-  {/* Copyright */}
-  <div className="text-center p-3" style={{backgroundColor: 'rgba(0, 0, 0, 0.05)'}}>
-    © 2020 Copyright:
-    <a className="text-body" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+      <footer className="bg-dark text-light pt-4 pb-2 mt-5">
+  <div className="container">
+    <div className="row">
+      {/* Brand Info */}
+      <div className="col-md-4 mb-3">
+        <h5 className="text-warning">Noodles Nation 🍜</h5>
+        <p>Your destination for bold flavors, spicy slurps, and noodle magic. Dive into deliciousness!</p>
+
+        {/* Social Icons */}
+        <div className="mt-3">
+          <a href="https://facebook.com" className="text-light me-3 fs-5" target="_blank" rel="noreferrer">
+            <i className="bi bi-facebook"></i>
+          </a>
+          <a href="https://instagram.com" className="text-light me-3 fs-5" target="_blank" rel="noreferrer">
+            <i className="bi bi-instagram"></i>
+          </a>
+          <a href="https://twitter.com" className="text-light me-3 fs-5" target="_blank" rel="noreferrer">
+            <i className="bi bi-twitter-x"></i>
+          </a>
+          <a href="mailto:noodlesnation@example.com" className="text-light fs-5">
+            <i className="bi bi-envelope-fill"></i>
+          </a>
+        </div>
+      </div>
+
+      {/* Quick Links */}
+      <div className="col-md-4 mb-3">
+        <h6 className="text-light">Quick Links</h6>
+        <ul className="list-unstyled">
+          <li><a href="#menu" className="text-light text-decoration-none">Menu</a></li>
+          <li><a href="#about" className="text-light text-decoration-none">About Us</a></li>
+          <li><a href="#contact" className="text-light text-decoration-none">Contact</a></li>
+          <li><a href="#order" className="text-light text-decoration-none">Order Now</a></li>
+        </ul>
+      </div>
+
+      {/* Contact Info */}
+      <div className="col-md-4 mb-3">
+        <h6 className="text-light">Contact</h6>
+        <p className="mb-1">📍 123 Flavor Street, Food City</p>
+        <p className="mb-1">📞 +91 98765 43210</p>
+        <p>✉️ noodlesnation@example.com</p>
+      </div>
+    </div>
+
+    {/* Bottom Text */}
+    <div className="text-center border-top pt-3">
+      <small>© {new Date().getFullYear()} Noodles Nation. All rights reserved.</small>
+    </div>
   </div>
 </footer>
 
     </div>
-  )
+  );
 }
 
-export default Footer
+export default Footer;
