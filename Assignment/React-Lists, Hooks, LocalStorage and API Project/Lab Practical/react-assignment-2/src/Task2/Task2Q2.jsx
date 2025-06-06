@@ -9,7 +9,7 @@ const users = [
     { id: 5, name: 'Ethan Wright' }
   ];
 
-function Task5Q2() {
+function Task2Q2() {
   return (
     <div>
       <div>
@@ -26,4 +26,4 @@ function Task5Q2() {
   )
 }
 
-export default Task5Q2
+export default Task2Q2

@@ -4,9 +4,8 @@ import React from 'react'
 const fruits = ['Apple', 'Banana', 'Cherry', 'Mango', 'Orange'];
 
 
-function Task5Q1() {
+function Task2Q1() {
   return (
-    <div>
       <div>
       <h2>Fruit List</h2>
       <ul>
@@ -17,8 +16,7 @@ function Task5Q1() {
         ))}
       </ul>
     </div>
-    </div>
   )
 }
 
-export default Task5Q1
+export default Task2Q1

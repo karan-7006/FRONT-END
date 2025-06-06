@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-function Task6Q1() {
+function Task3Q1() {
   const [count, setCount] = useState(0);
 
   const increment = () => setCount(prev => prev + 1);
@@ -15,4 +15,4 @@ function Task6Q1() {
   );
 }
 
-export default Task6Q1;
+export default Task3Q1;

@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 
 
 
-function Task6Q2() {
+function Task3Q2() {
 
     const [users, setUsers] = useState([]);
 
@@ -28,4 +28,4 @@ function Task6Q2() {
   )
 }
 
-export default Task6Q2
+export default Task3Q2

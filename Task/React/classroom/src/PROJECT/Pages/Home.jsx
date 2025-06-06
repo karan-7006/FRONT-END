@@ -9,7 +9,7 @@ function Home() {
 
       {/* Slider Starts */}
       <div className="mt-1 mb-1">
-        <div className="d-flex align-items-center justify-content-center bg-warning shadow-sm p-4 gap-4 rounded-3">
+        <div className="d-flex align-items-center justify-content-center bg-warning shadow-sm p-4 gap-4">
           <div className="display-1" role="img" aria-label="Noodle Bowl">
             🍜
           </div>

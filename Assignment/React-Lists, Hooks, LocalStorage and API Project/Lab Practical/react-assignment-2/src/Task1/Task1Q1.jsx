@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Task4Q1({ name = "John Doe", age = 25, location = "Unknown" }) {
+function Task1Q1({ name = "John Doe", age = 25, location = "Unknown" }) {
   return (
     <div style={{ width: '18rem', margin: '100px auto', padding: '20px ', backgroundColor: 'lightgray', borderRadius: '10px', boxShadow: '0 4px 6px rgba(0, 0, 0, 0.5)' }}>
       <div className="text-center">
@@ -27,4 +27,4 @@ function Task4Q1({ name = "John Doe", age = 25, location = "Unknown" }) {
   )
 }
 
-export default Task4Q1
+export default Task1Q1

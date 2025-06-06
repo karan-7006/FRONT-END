@@ -10,8 +10,9 @@ function ContactUs() {
       {/* Contact Form Section */}
       <section className="container my-5">
         <div className="row">
+          
           {/* Contact Form */}
-          <div className="col-md-6 mb-4">
+          <div className="col mb-4">
             <h3 className="text-danger mb-3 fw-bold">Send us a Message</h3>
             <form>
               <div className="mb-3">

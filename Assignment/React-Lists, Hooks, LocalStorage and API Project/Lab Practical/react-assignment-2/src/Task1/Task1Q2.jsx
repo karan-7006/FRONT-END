@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const Task4Q2 = () => {
+const Task1Q2 = () => {
   const [count, setCount] = useState(0);
 
   const handleIncrement = () => {
@@ -17,4 +17,4 @@ const Task4Q2 = () => {
   );
 };
 
-export default Task4Q2;
+export default Task1Q2;
