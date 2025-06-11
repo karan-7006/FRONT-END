@@ -20,7 +20,7 @@ function App() {
 
       {/* -:Task 3:- */}
       {/* <Task3Q1 /> */}
-      <Task3Q2 />
+      {/* <Task3Q2 /> */}
 
     </div>
   );

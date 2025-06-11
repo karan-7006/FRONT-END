@@ -4,7 +4,7 @@ const Task1Q2 = () => {
   const [count, setCount] = useState(0);
 
   const handleIncrement = () => {
-    setCount(prevCount => prevCount + 1);
+    setCount(Count => Count + 1);
   };
 
   return (
