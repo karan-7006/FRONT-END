@@ -1,0 +1,71 @@
+{
+    "user":[
+        {
+            "id":1,
+            "name":"Karan",
+            "email":"kharvarkaran21@gmail.com",
+            "password":"karan123",
+            "status":"unblock"
+        },
+        {
+            "id":2,
+            "name":"Dhvanit",
+            "email":"Dhvanit@gmail.com",
+            "password":"Dhvanit123",
+            "status":"unblock"
+        },
+        {
+            "id":3,
+            "name":"Ansh",
+            "email":"Ansh@gmail.com",
+            "password":"Ansh123",
+            "status":"block"
+        }
+    ],
+
+    "Admin":[
+        {
+            "id":1,
+            "name":"Akash",
+            "email":"Akash@gmail.com",
+            "password":"Akash123"
+        }
+        
+    ],
+
+    "Blog":[
+        {
+            "id":1,
+            "title":"Teal Vintage Car",
+            "description":"A teal vintage car parked on a cobblestone street, surrounded by lush greenery and old brick buildings.",
+            "comment":"10",
+            "name":"Karan",
+            "date":"17-7-2004",
+            "img":"https://images.pexels.com/photos/1592384/pexels-photo-1592384.jpeg?auto=compress&cs=tinysrgb&w=600"
+        },
+        {
+            "id":1,
+            "title":"Green Super Car",
+            "description":"A Sleek Green super car speeding down a winding mountain road, with a breathtaking view of the vally below.",
+            "comment":"7",
+            "name":"Dhvanit",
+            "date":"20-12-2023",
+            "img":"https://images.pexels.com/photos/2127733/pexels-photo-2127733.jpeg?auto=compress&cs=tinysrgb&w=600"
+        }
+    ],
+
+    "services":[
+        {
+            "id":1,
+            "title":"Phone-reservation",
+            "description":"Phone Reservation is a service that allows customer to reserve their appointment",
+            "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4QXu9VS3PBIC0AdlQwiQ5tZ3bGZ5qp5JQRRogiprrzq_DjvK_vgCzVDeqblwhE-JoDLE&usqp=CAU"
+        },
+        {
+            "id":1,
+            "title":"Special Rates",
+            "description":"Special rates are offered to customers who book their appointments in advance",
+            "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCKgDFjjuhT7lA-HPdyy-5PNRV17Iy3wRhHg&s"
+        }
+    ]
+}
