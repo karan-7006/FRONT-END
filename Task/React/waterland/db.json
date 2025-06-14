@@ -1,0 +1,35 @@
+{
+    "user":[
+        {
+            "id":1,
+            "name":"Karan",
+            "email":"kharvarkaran21@gmail.com",
+            "password":"karan123",
+            "status":"unblock"
+        },
+        {
+            "id":2,
+            "name":"Dhvanit",
+            "email":"Dhvanit@gmail.com",
+            "password":"Dhvanit123",
+            "status":"unblock"
+        },
+        {
+            "id":3,
+            "name":"Ansh",
+            "email":"Ansh@gmail.com",
+            "password":"Ansh123",
+            "status":"block"
+        }
+    ],
+
+    "Admin":[
+        {
+            "id":1,
+            "name":"Akash",
+            "email":"Akash@gmail.com",
+            "password":"Akash123"
+        }
+        
+    ]
+}
