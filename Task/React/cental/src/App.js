@@ -10,6 +10,9 @@ import Cars from "./Website/Pages/Cars";
 import Team from "./Website/Pages/Team";
 import Testimonial from "./Website/Pages/Testimonial";
 import NotFound from "./Website/Pages/NotFound";
+import DashBoard from "./Admin/AdPages/DashBoard";
+import BlogsManage from "./Admin/AdPages/Blog/BlogsManage";
+import BlogsAdd from "./Admin/AdPages/Blog/BlogsAdd";
 
 function App() {
   return (
@@ -27,6 +30,12 @@ function App() {
         <Route path="/Team" element={<Team />} />
         <Route path="/Testimonial" element={<Testimonial />} />
         <Route path="*" element={<NotFound />} />
+
+        {/* -:Admin:- */}
+        <Route path="/DashBoard" element={<DashBoard />} />
+        <Route path="/BlogsManage" element={<BlogsManage />} />
+        <Route path="/BlogsAdd" element={<BlogsAdd />} />
+
 
       </Routes>
 

@@ -36,12 +36,12 @@
     "Blog":[
         {
             "id":1,
-            "title":"Teal Vintage Car",
-            "description":"A teal vintage car parked on a cobblestone street, surrounded by lush greenery and old brick buildings.",
+            "title":"Blue Vintage Car",
+            "description":"A Blue vintage car parked on a cobblestone street, surrounded by lush greenery and old brick buildings.",
             "comment":"10",
             "name":"Karan",
             "date":"17-7-2004",
-            "img":"https://images.pexels.com/photos/1592384/pexels-photo-1592384.jpeg?auto=compress&cs=tinysrgb&w=600"
+            "img":"https://images.pexels.com/photos/170811/pexels-photo-170811.jpeg?_gl=1*rjb8ea*_ga*MTQyMDAxNTMzMy4xNzM2OTE3NDkz*_ga_8JE65Q40S6*czE3NTAwNjY4NzQkbzI0JGcxJHQxNzUwMDY2ODk4JGozNiRsMCRoMA.."
         },
         {
             "id":1,
@@ -51,6 +51,16 @@
             "name":"Dhvanit",
             "date":"20-12-2023",
             "img":"https://images.pexels.com/photos/2127733/pexels-photo-2127733.jpeg?auto=compress&cs=tinysrgb&w=600"
+        },
+
+        {
+            "id":3,
+            "title":"Super White Car",
+            "description":"A Royal White super car speeding down a winding mountain road, with a breathtaking view of the vally below.",
+            "comment":"4",
+            "name":"Akash",
+            "date":"15-8-2023",
+            "img":"https://images.pexels.com/photos/120049/pexels-photo-120049.jpeg"
         }
     ],
 
@@ -84,10 +94,10 @@
             "mileage": "25km"
         },
 
-                {
+        {
             "id":2,
-            "img": "https://images.pexels.com/photos/39855/lamborghini-brno-racing-car-automobiles-39855.jpeg?auto=compress&cs=tinysrgb&w=600",
-            "name": "Bumble Bee",
+            "img": "https://images.pexels.com/photos/120049/pexels-photo-120049.jpeg?_gl=1*uua5u7*_ga*MTQyMDAxNTMzMy4xNzM2OTE3NDkz*_ga_8JE65Q40S6*czE3NTAwODQwMzckbzI2JGcxJHQxNzUwMDg0MDc0JGoyMyRsMCRoMA..",
+            "name": "Mercedes",
             "review": "4.4",
             "price": "$150/day",
             "Seat": "2",
@@ -96,6 +106,20 @@
             "year": "2025",
             "setting": "Auto",
             "mileage": "20km"
+        },
+
+        {
+            "id":3,
+            "img": "https://images.pexels.com/photos/752615/pexels-photo-752615.jpeg?_gl=1*17451ah*_ga*MTQyMDAxNTMzMy4xNzM2OTE3NDkz*_ga_8JE65Q40S6*czE3NTAwODQwMzckbzI2JGcxJHQxNzUwMDg0MTY4JGo1NiRsMCRoMA..",
+            "name": "Bumble Bee",
+            "review": "4.3",
+            "price": "$145/day",
+            "Seat": "2",
+            "transmission": "AT/MT",
+            "fuel": "Petrol",
+            "year": "2025",
+            "setting": "Auto",
+            "mileage": "25km"
         }
     ],
 

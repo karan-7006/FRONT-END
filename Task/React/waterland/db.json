@@ -31,5 +31,200 @@
             "password":"Akash123"
         }
         
+    ],
+
+    "About cards":[
+        {
+            "id":1,
+            "title": "Best Pools",
+            "description": "A crystal-clear, compact pool perfect for refreshing dips and relaxing moments. Ideal for small spaces without compromising comfort or style.",
+            "img": "https://images.pexels.com/photos/61129/pexels-photo-61129.jpeg?auto=compress&cs=tinysrgb&w=600"
+        },
+
+        {
+            "id":2,
+            "title": "Waterslides",
+            "description": "Experience the thrill with our exciting waterslides, designed for all ages! Twist, turn, and splash your way down smooth, safe slides that guarantee endless fun and laughter.",
+            "img": "https://images.pexels.com/photos/13760406/pexels-photo-13760406.jpeg?auto=compress&cs=tinysrgb&w=600"
+        },
+
+        {
+            {
+            "id":3,
+            "title": "RiverRides",
+            "description": "Drift into adventure with our scenic river ride, where gentle currents carry you through lush landscapes and tranquil waters. Perfect for all ages.",
+            "img": "https://www.pexels.com/photo/people-riding-a-boat-2161449/"
+        }
+        }
+    ],
+
+    "service cards":[
+        {
+            "id":1,
+            "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSal79ARA4MZ24FJKbrBZwCPvetC0sgAPuqnQ&s",
+            "title": "Private Gazebo",
+            "description": "Relax in the comfort of your own private gazebo, surrounded by nature and serenity. Perfect for intimate gatherings, peaceful reading, or romantic evenings."
+        },
+
+        {
+            "id":2,
+            "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6GwwA_poF7x19VG1GSRwtYcTNmUOykOq7Tg&s",
+            "title": "Delicious Food",
+            "description": "Savor every bite of our mouthwatering dishes, crafted with the freshest ingredients and bursting with flavor. From rich, aromatic spices to perfectly balanced textures."
+        },
+
+        {
+            "id":3,
+            "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5sEv0Mj34gYWxWVMKyLBGYcf4dtpGMJae5g&s",
+            "title": "Safety Lockers",
+            "description": "Keep your valuables secure with our durable safety lockers, built with advanced locking technology and robust materials. Designed for both personal and commercial use."
+        }
+    ],
+
+    "packages":[
+        {
+            "id":1,
+            "title": "Family Packages",
+            "description": "Whether it's a weekend getaway or a full vacation, our family packages ensure joy and togetherness every step of the way.",
+            "price": "$260,90/family",
+            "subtitle": "All Access To Waterpark",
+            "gazebo": "Get Two Gazebo",
+            "drinks": "Free Soft Drinks",
+            "lockers": "Get Four Lockers",
+            "towels": "Free Four Towels"
+        },
+
+        {
+            "id":2,
+            "title": "Basic Packages",
+            "description": "Our Basic Package offers great value with all the essentials you need for a fun and comfortable experience. Enjoy access to core facilities and services.",
+            "price": "$60,90/person",
+            "gazebo": "Get Small Gazebo",
+            "drinks": "Free Soft Drink",
+            "lockers": "Get one Locker",
+            "towels": "Free Towel"
+        }
+    ],
+
+    "attractions": [
+        {
+            "id":1,
+            "img": "https://media.istockphoto.com/id/1309983339/photo/thrill-seeking-on-the-boardwalk.jpg?s=612x612&w=0&k=20&c=Axxgu1hwIXX0AOE7bL7xbeF3JV1KxTNeC1__mKjE5Mo=",
+            "title": "Rolar Coaster"
+        },
+
+        {
+            "id":2,
+            "img": "https://media.istockphoto.com/id/950279234/photo/mixed-race-little-daughter-having-fun-with-mother-on-carousel-ride.jpg?s=612x612&w=0&k=20&c=5LhNumCGxFYgZWvLJdYAjhUQGzsJ5ra9rYqRawF60sg=",
+            "title": "Carousel"
+        },
+
+        {
+            "id":3,
+            "img": "https://media.istockphoto.com/id/2177482673/photo/gaming-chairs-in-illuminated-arcade-game-zone-in-shopping-mall.jpg?s=612x612&w=0&k=20&c=zZ9wiwnIix2F0RaX7CLdpLZe1nhcUtPi8PuKAMbvKSU=",
+            "title": "Arcade Game"
+        }
+    ],
+
+    "gallery":[
+        {
+            "id":1,
+            "img": "https://media.istockphoto.com/id/821852142/photo/homosexual-couple-men-having-fun-in-waterpark.jpg?s=612x612&w=0&k=20&c=COCNVUaGBleXFVrVrgi4x4B7OI3lNVVR6FHE1CKpyXg="
+        },
+
+        {
+            "id":2,
+            "img": "https://media.istockphoto.com/id/898439226/photo/multi-ethnic-children-fun-on-lazy-river-at-water-park.jpg?s=612x612&w=0&k=20&c=-lapfPaJEeFThygPT021ucFr7J6XNyZDTRPoP9ZnFvg="
+        },
+
+        {
+            "id":3,
+            "img": "https://media.istockphoto.com/id/184992283/photo/waterpark-in-tropical-resort.jpg?s=612x612&w=0&k=20&c=-de-CtRpiDqklCI5N7ME2YATmeQ9Plz9dIfVUOyUuB0="
+        }
+    ],
+
+    "blog":[
+        {
+            "id":1,
+            "badge": "Vacation",
+            "img": "https://media.istockphoto.com/id/1149415384/photo/indian-kids-enjoying-in-swimming-pool.jpg?s=612x612&w=0&k=20&c=xhURat43f5jge9yrrT4edxlmyyTOssRPxPTk0IG-CyE=",
+            "date": "August 19, 2025",
+            "title": "Why children don't like getting out of the water",
+            "description": "Experience the thrill with our exciting waterslides, designed for all ages! Twist, turn, and splash your way down smooth, safe slides that guarantee endless fun and laughter."
+        },
+
+        {
+            "id":2,
+            "badge": "Insight",
+            "img": "https://media.istockphoto.com/id/153508885/photo/large-varicoloured-chutes-as-spiral-and-pool-in-kva-kva-park.jpg?s=612x612&w=0&k=20&c=xHQQZQLGXBMUFZlj4ZN2Mp0ubJKNav8DgljM6Fq920s=",
+            "date": "August 19, 2025",
+            "title": "5 Ways to enjoy waterland in this spring",
+            "description": "Dive into fun at our water park, where every splash brings a smile! With thrilling slides, relaxing pools, and family-friendly attractions, there's something for everyone."
+        },
+
+        {
+            "id":3,
+            "badge": "Enjoyment",
+            "img": "https://media.istockphoto.com/id/185000951/photo/waterpark-in-luxury-tropical-resort.jpg?s=612x612&w=0&k=20&c=SP6Nf-eucIksm9PxNawnhK13CD32rf6HH3jPKTAxBFM=",
+            "date": "August 19, 2025",
+            "title": "3 Tips for your family spring break at water park",
+            "description": "Get ready for nonstop thrills at our action-packed water park! Race down towering slides, float along lazy rivers, and cool off in wave pools designed for all ages."
+        }
+    ],
+
+    "team":[
+        {
+            "id":1,
+            "img": "https://images.pexels.com/photos/839011/pexels-photo-839011.jpeg?auto=compress&cs=tinysrgb&w=600",
+            "name": "John",
+            "role": "Designer",
+            "description": "WaterLand has been a game-changer for our business. Their services are top-notch and the team is always ready to help."
+        },
+
+        {
+            "id":2,
+            "img": "https://images.pexels.com/photos/842811/pexels-photo-842811.jpeg?auto=compress&cs=tinysrgb&w=600",
+            "name": "Mike",
+            "role": "Developer",
+            "description": "WaterLand service are exceptional. They have helped us streamline our operations."
+        
+        },
+
+        {
+            "id":3,
+            "img": "https://images.pexels.com/photos/1121796/pexels-photo-1121796.jpeg?auto=compress&cs=tinysrgb&w=600",
+            "name": "Azad",
+            "role": "Manager",
+            "description": "Our park's management is very Good and neat. It provides basic needs to everyone."
+        }
+    ],
+
+    "client":[
+        {
+            "id":1,
+            "img": "https://images.pexels.com/photos/733872/pexels-photo-733872.jpeg?auto=compress&cs=tinysrgb&w=600",
+            "name": "Maggie",
+            "role": "Marketing Manager",
+            "review": "4.5",
+            "description": "Cental has been a game-changer for our business. Their services are top-notch and the team is always ready to help."
+        },
+
+        {
+            "id":2,
+            "img": "https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=600",
+            "name": "Jenefer",
+            "role": "Contant Writer",
+            "review": "4.1",
+            "description": "cental service are exceptional. They have helped us streamline our operations."
+        },
+
+        {
+            "id":3,
+            "img": "https://images.pexels.com/photos/733872/pexels-photo-733872.jpeg?auto=compress&cs=tinysrgb&w=600",
+            "name": "Marina",
+            "role": "Publisher",
+            "review": "4.6",
+            "description": "Cental has been a game-changer for our business. Their services are top-notch and the team is always ready to help."
+        }
     ]
 }

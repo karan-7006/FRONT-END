@@ -1,9 +1,35 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Header from "../Common/Header";
 import NavHeader from "../Common/NavHeader";
 import Footer from "../Common/Footer";
+import axios from "axios";
+import { Helmet } from "react-helmet";
 
 function Cars() {
+  <Helmet>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <script src="js/main.js"></script>
+  </Helmet>;
+
+  const [cars, setCars] = useState([]);
+
+  useEffect(() => {
+    fetchdata();
+  }, []);
+
+  const fetchdata = async () => {
+    const res = await axios.get("http://localhost:3000/Vehicle");
+    // console.log(res.data);
+    setCars(res.data);
+  };
+
   return (
     <div>
       <Header />
@@ -32,68 +58,73 @@ function Cars() {
               className="categories-carousel owl-carousel wow fadeInUp"
               data-wow-delay="0.1s"
             >
-              <div className="categories-item p-4">
-                <div className="categories-item-inner">
-                  <div className="categories-img rounded-top">
-                    <img
-                      src="img/car-1.png"
-                      className="img-fluid w-100 rounded-top"
-                      alt
-                    />
-                  </div>
-                  <div className="categories-content rounded-bottom p-4">
-                    <h4>Mercedes Benz R3</h4>
-                    <div className="categories-review mb-4">
-                      <div className="me-3">4.5 Review</div>
-                      <div className="d-flex justify-content-center text-secondary">
-                        <i className="fas fa-star" />
-                        <i className="fas fa-star" />
-                        <i className="fas fa-star" />
-                        <i className="fas fa-star" />
-                        <i className="fas fa-star text-body" />
+              {cars &&
+                cars.map((data) => {
+                  return (
+                    <div className="categories-item p-4">
+                      <div className="categories-item-inner">
+                        <div className="categories-img rounded-top">
+                          <img
+                            src={data.img}
+                            className="img-fluid w-100 rounded-top"
+                            alt
+                          />
+                        </div>
+                        <div className="categories-content rounded-bottom p-4">
+                          <h4>{data.name}</h4>
+                          <div className="categories-review mb-4">
+                            <div className="me-3">{data.review}</div>
+                            <div className="d-flex justify-content-center text-secondary">
+                              <i className="fas fa-star" />
+                              <i className="fas fa-star" />
+                              <i className="fas fa-star" />
+                              <i className="fas fa-star" />
+                              <i className="fas fa-star text-body" />
+                            </div>
+                          </div>
+                          <div className="mb-4">
+                            <h4 className="bg-white text-primary rounded-pill py-2 px-4 mb-0">
+                              {data.price}
+                            </h4>
+                          </div>
+                          <div className="row gy-2 gx-0 text-center mb-4">
+                            <div className="col-4 border-end border-white">
+                              <i className="fa fa-users text-dark" />{" "}
+                              <span className="text-body ms-1">4 Seat</span>
+                            </div>
+                            <div className="col-4 border-end border-white">
+                              <i className="fa fa-car text-dark" />{" "}
+                              <span className="text-body ms-1">AT/MT</span>
+                            </div>
+                            <div className="col-4">
+                              <i className="fa fa-gas-pump text-dark" />{" "}
+                              <span className="text-body ms-1">Petrol</span>
+                            </div>
+                            <div className="col-4 border-end border-white">
+                              <i className="fa fa-car text-dark" />{" "}
+                              <span className="text-body ms-1">2015</span>
+                            </div>
+                            <div className="col-4 border-end border-white">
+                              <i className="fa fa-cogs text-dark" />{" "}
+                              <span className="text-body ms-1">AUTO</span>
+                            </div>
+                            <div className="col-4">
+                              <i className="fa fa-road text-dark" />{" "}
+                              <span className="text-body ms-1">27K</span>
+                            </div>
+                          </div>
+                          <a
+                            href="#"
+                            className="btn btn-primary rounded-pill d-flex justify-content-center py-3"
+                          >
+                            Book Now
+                          </a>
+                        </div>
                       </div>
                     </div>
-                    <div className="mb-4">
-                      <h4 className="bg-white text-primary rounded-pill py-2 px-4 mb-0">
-                        $99:00/Day
-                      </h4>
-                    </div>
-                    <div className="row gy-2 gx-0 text-center mb-4">
-                      <div className="col-4 border-end border-white">
-                        <i className="fa fa-users text-dark" />{" "}
-                        <span className="text-body ms-1">4 Seat</span>
-                      </div>
-                      <div className="col-4 border-end border-white">
-                        <i className="fa fa-car text-dark" />{" "}
-                        <span className="text-body ms-1">AT/MT</span>
-                      </div>
-                      <div className="col-4">
-                        <i className="fa fa-gas-pump text-dark" />{" "}
-                        <span className="text-body ms-1">Petrol</span>
-                      </div>
-                      <div className="col-4 border-end border-white">
-                        <i className="fa fa-car text-dark" />{" "}
-                        <span className="text-body ms-1">2015</span>
-                      </div>
-                      <div className="col-4 border-end border-white">
-                        <i className="fa fa-cogs text-dark" />{" "}
-                        <span className="text-body ms-1">AUTO</span>
-                      </div>
-                      <div className="col-4">
-                        <i className="fa fa-road text-dark" />{" "}
-                        <span className="text-body ms-1">27K</span>
-                      </div>
-                    </div>
-                    <a
-                      href="#"
-                      className="btn btn-primary rounded-pill d-flex justify-content-center py-3"
-                    >
-                      Book Now
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div className="categories-item p-4">
+                  );
+                })}
+              {/* <div className="categories-item p-4">
                 <div className="categories-item-inner">
                   <div className="categories-img rounded-top">
                     <img
@@ -275,7 +306,7 @@ function Cars() {
                     </a>
                   </div>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
