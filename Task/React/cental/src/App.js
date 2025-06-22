@@ -13,6 +13,10 @@ import NotFound from "./Website/Pages/NotFound";
 import DashBoard from "./Admin/AdPages/DashBoard";
 import BlogsManage from "./Admin/AdPages/Blog/BlogsManage";
 import BlogsAdd from "./Admin/AdPages/Blog/BlogsAdd";
+import CarsManage from "./Admin/AdPages/Cars/CarsManage";
+import CarsAdd from "./Admin/AdPages/Cars/CarsAdd";
+import TeamAdd from "./Admin/AdPages/Team/TeamAdd";
+import TeamManage from "./Admin/AdPages/Team/TeamManage";
 
 function App() {
   return (
@@ -35,6 +39,11 @@ function App() {
         <Route path="/DashBoard" element={<DashBoard />} />
         <Route path="/BlogsManage" element={<BlogsManage />} />
         <Route path="/BlogsAdd" element={<BlogsAdd />} />
+        <Route path="/CarsManage" element={<CarsManage />} />
+        <Route path="/CarsAdd" element={<CarsAdd />} />
+        <Route path="/TeamAdd" element={<TeamAdd />} />
+        <Route path="/TeamManage" element={<TeamManage />} />
+        
 
 
       </Routes>

@@ -110,26 +110,54 @@ function AdHeader() {
                     className="nav-link dropdown-toggle"
                     data-bs-toggle="dropdown"
                   >
+                    Cars
+                  </a>
+                  <div className="dropdown-menu m-0">
+                    <NavLink to="/CarsManage" className="dropdown-item">
+                      Cars Manage
+                    </NavLink>
+                    <NavLink to="/CarsAdd" className="dropdown-item">
+                      Cars Add
+                    </NavLink>
+                  </div>
+                </div>
+                <div className="nav-item dropdown">
+                  <a
+                    href="#"
+                    className="nav-link dropdown-toggle"
+                    data-bs-toggle="dropdown"
+                  >
+                    Team
+                  </a>
+                  <div className="dropdown-menu m-0">
+                    <NavLink to="/TeamManage" className="dropdown-item">
+                      Team Manage
+                    </NavLink>
+                    <NavLink to="/TeamAdd" className="dropdown-item">
+                      Team Add
+                    </NavLink>
+                  </div>
+                </div>
+                <div className="nav-item dropdown">
+                  <a
+                    href="#"
+                    className="nav-link dropdown-toggle"
+                    data-bs-toggle="dropdown"
+                  >
                     Pages
                   </a>
                   <div className="dropdown-menu m-0">
                     <NavLink to="/Feature" className="dropdown-item">
                       Our Feature
                     </NavLink>
-                    <NavLink to="/Cars" className="dropdown-item">
-                      Our Cars
-                    </NavLink>
-                    <NavLink to="/Team" className="dropdown-item">
-                      Our Team
+                    <NavLink to="/Contact" className="dropdown-item">
+                      Contact
                     </NavLink>
                     <NavLink to="/Testimonial" className="dropdown-item">
                       Testimonial
                     </NavLink>
                   </div>
                 </div>
-                <NavLink to="/Contact" className="nav-item nav-link">
-                  Contact
-                </NavLink>
               </div>
               <a href="#" className="btn btn-primary rounded-pill py-2 px-4">
                 Get Started

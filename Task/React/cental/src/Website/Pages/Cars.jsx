@@ -54,263 +54,61 @@ function Cars() {
                 quisquam quia distinctio,
               </p>
             </div>
-            <div
-              className="categories-carousel owl-carousel wow fadeInUp"
-              data-wow-delay="0.1s"
-            >
+          </div>
+
+          <div className="container my-4">
+            <div className="row">
               {cars &&
-                cars.map((data) => {
+                cars.map((data, index) => {
+                  console.log(data);
                   return (
-                    <div className="categories-item p-4">
-                      <div className="categories-item-inner">
-                        <div className="categories-img rounded-top">
-                          <img
-                            src={data.img}
-                            className="img-fluid w-100 rounded-top"
-                            alt
-                          />
-                        </div>
-                        <div className="categories-content rounded-bottom p-4">
-                          <h4>{data.name}</h4>
-                          <div className="categories-review mb-4">
-                            <div className="me-3">{data.review}</div>
-                            <div className="d-flex justify-content-center text-secondary">
-                              <i className="fas fa-star" />
-                              <i className="fas fa-star" />
-                              <i className="fas fa-star" />
-                              <i className="fas fa-star" />
-                              <i className="fas fa-star text-body" />
-                            </div>
+                    <div className="col-md-4 mb-5">
+                      <div
+                        className="card car-card mx-auto"
+                        style={{ maxWidth: "22rem" }}
+                      >
+                        <img
+                          src={data.img}
+                          className="car-img-top p-3"
+                          alt="Car"
+                        />
+                        <div className="card-body text-center">
+                          <h5 className="card-title">{data.name}</h5>
+                          <p className="text-muted mb-1"></p>
+                          <div className="mb-3">
+                            <span className="text-warning">
+                              {data.review} &#9733;&#9733;&#9733;&#9733;&#9734;
+                            </span>
                           </div>
-                          <div className="mb-4">
-                            <h4 className="bg-white text-primary rounded-pill py-2 px-4 mb-0">
-                              {data.price}
-                            </h4>
+                          <div className="price text-danger fw-bold fs-4 mb-3">
+                            ${data.price}/day
                           </div>
-                          <div className="row gy-2 gx-0 text-center mb-4">
-                            <div className="col-4 border-end border-white">
-                              <i className="fa fa-users text-dark" />{" "}
-                              <span className="text-body ms-1">4 Seat</span>
-                            </div>
-                            <div className="col-4 border-end border-white">
-                              <i className="fa fa-car text-dark" />{" "}
-                              <span className="text-body ms-1">AT/MT</span>
+
+                          <div className="row text-muted text-center small g-2 mb-3">
+                            <div className="col-4">
+                              <i className="bi bi-person-fill me-1"> Seat: {data.Seat}</i>
                             </div>
                             <div className="col-4">
-                              <i className="fa fa-gas-pump text-dark" />{" "}
-                              <span className="text-body ms-1">Petrol</span>
-                            </div>
-                            <div className="col-4 border-end border-white">
-                              <i className="fa fa-car text-dark" />{" "}
-                              <span className="text-body ms-1">2015</span>
-                            </div>
-                            <div className="col-4 border-end border-white">
-                              <i className="fa fa-cogs text-dark" />{" "}
-                              <span className="text-body ms-1">AUTO</span>
+                              <i className="bi bi-calendar3 me-1"> Year: {data.year}</i>
                             </div>
                             <div className="col-4">
-                              <i className="fa fa-road text-dark" />{" "}
-                              <span className="text-body ms-1">27K</span>
+                              <i className="bi bi-speedometer2 me-1"> Avg: {data.mileage}km</i>
                             </div>
                           </div>
-                          <a
-                            href="#"
-                            className="btn btn-primary rounded-pill d-flex justify-content-center py-3"
-                          >
+
+                          <button className="btn btn-danger w-100 rounded-pill">
                             Book Now
-                          </a>
+                          </button>
                         </div>
                       </div>
                     </div>
                   );
                 })}
-              {/* <div className="categories-item p-4">
-                <div className="categories-item-inner">
-                  <div className="categories-img rounded-top">
-                    <img
-                      src="img/car-2.png"
-                      className="img-fluid w-100 rounded-top"
-                      alt
-                    />
-                  </div>
-                  <div className="categories-content rounded-bottom p-4">
-                    <h4>Toyota Corolla Cross</h4>
-                    <div className="categories-review mb-4">
-                      <div className="me-3">3.5 Review</div>
-                      <div className="d-flex justify-content-center text-secondary">
-                        <i className="fas fa-star" />
-                        <i className="fas fa-star" />
-                        <i className="fas fa-star" />
-                        <i className="fas fa-star" />
-                        <i className="fas fa-star text-body" />
-                      </div>
-                    </div>
-                    <div className="mb-4">
-                      <h4 className="bg-white text-primary rounded-pill py-2 px-4 mb-0">
-                        $128:00/Day
-                      </h4>
-                    </div>
-                    <div className="row gy-2 gx-0 text-center mb-4">
-                      <div className="col-4 border-end border-white">
-                        <i className="fa fa-users text-dark" />{" "}
-                        <span className="text-body ms-1">4 Seat</span>
-                      </div>
-                      <div className="col-4 border-end border-white">
-                        <i className="fa fa-car text-dark" />{" "}
-                        <span className="text-body ms-1">AT/MT</span>
-                      </div>
-                      <div className="col-4">
-                        <i className="fa fa-gas-pump text-dark" />{" "}
-                        <span className="text-body ms-1">Petrol</span>
-                      </div>
-                      <div className="col-4 border-end border-white">
-                        <i className="fa fa-car text-dark" />{" "}
-                        <span className="text-body ms-1">2015</span>
-                      </div>
-                      <div className="col-4 border-end border-white">
-                        <i className="fa fa-cogs text-dark" />{" "}
-                        <span className="text-body ms-1">AUTO</span>
-                      </div>
-                      <div className="col-4">
-                        <i className="fa fa-road text-dark" />{" "}
-                        <span className="text-body ms-1">27K</span>
-                      </div>
-                    </div>
-                    <a
-                      href="#"
-                      className="btn btn-primary rounded-pill d-flex justify-content-center py-3"
-                    >
-                      Book Now
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div className="categories-item p-4">
-                <div className="categories-item-inner">
-                  <div className="categories-img rounded-top">
-                    <img
-                      src="img/car-3.png"
-                      className="img-fluid w-100 rounded-top"
-                      alt
-                    />
-                  </div>
-                  <div className="categories-content rounded-bottom p-4">
-                    <h4>Tesla Model S Plaid</h4>
-                    <div className="categories-review mb-4">
-                      <div className="me-3">3.8 Review</div>
-                      <div className="d-flex justify-content-center text-secondary">
-                        <i className="fas fa-star" />
-                        <i className="fas fa-star" />
-                        <i className="fas fa-star" />
-                        <i className="fas fa-star" />
-                        <i className="fas fa-star text-body" />
-                      </div>
-                    </div>
-                    <div className="mb-4">
-                      <h4 className="bg-white text-primary rounded-pill py-2 px-4 mb-0">
-                        $170:00/Day
-                      </h4>
-                    </div>
-                    <div className="row gy-2 gx-0 text-center mb-4">
-                      <div className="col-4 border-end border-white">
-                        <i className="fa fa-users text-dark" />{" "}
-                        <span className="text-body ms-1">4 Seat</span>
-                      </div>
-                      <div className="col-4 border-end border-white">
-                        <i className="fa fa-car text-dark" />{" "}
-                        <span className="text-body ms-1">AT/MT</span>
-                      </div>
-                      <div className="col-4">
-                        <i className="fa fa-gas-pump text-dark" />{" "}
-                        <span className="text-body ms-1">Petrol</span>
-                      </div>
-                      <div className="col-4 border-end border-white">
-                        <i className="fa fa-car text-dark" />{" "}
-                        <span className="text-body ms-1">2015</span>
-                      </div>
-                      <div className="col-4 border-end border-white">
-                        <i className="fa fa-cogs text-dark" />{" "}
-                        <span className="text-body ms-1">AUTO</span>
-                      </div>
-                      <div className="col-4">
-                        <i className="fa fa-road text-dark" />{" "}
-                        <span className="text-body ms-1">27K</span>
-                      </div>
-                    </div>
-                    <a
-                      href="#"
-                      className="btn btn-primary rounded-pill d-flex justify-content-center py-3"
-                    >
-                      Book Now
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div className="categories-item p-4">
-                <div className="categories-item-inner">
-                  <div className="categories-img rounded-top">
-                    <img
-                      src="img/car-4.png"
-                      className="img-fluid w-100 rounded-top"
-                      alt
-                    />
-                  </div>
-                  <div className="categories-content rounded-bottom p-4">
-                    <h4>Hyundai Kona Electric</h4>
-                    <div className="categories-review mb-4">
-                      <div className="me-3">4.8 Review</div>
-                      <div className="d-flex justify-content-center text-secondary">
-                        <i className="fas fa-star" />
-                        <i className="fas fa-star" />
-                        <i className="fas fa-star" />
-                        <i className="fas fa-star" />
-                        <i className="fas fa-star" />
-                      </div>
-                    </div>
-                    <div className="mb-4">
-                      <h4 className="bg-white text-primary rounded-pill py-2 px-4 mb-0">
-                        $187:00/Day
-                      </h4>
-                    </div>
-                    <div className="row gy-2 gx-0 text-center mb-4">
-                      <div className="col-4 border-end border-white">
-                        <i className="fa fa-users text-dark" />{" "}
-                        <span className="text-body ms-1">4 Seat</span>
-                      </div>
-                      <div className="col-4 border-end border-white">
-                        <i className="fa fa-car text-dark" />{" "}
-                        <span className="text-body ms-1">AT/MT</span>
-                      </div>
-                      <div className="col-4">
-                        <i className="fa fa-gas-pump text-dark" />{" "}
-                        <span className="text-body ms-1">Petrol</span>
-                      </div>
-                      <div className="col-4 border-end border-white">
-                        <i className="fa fa-car text-dark" />{" "}
-                        <span className="text-body ms-1">2015</span>
-                      </div>
-                      <div className="col-4 border-end border-white">
-                        <i className="fa fa-cogs text-dark" />{" "}
-                        <span className="text-body ms-1">AUTO</span>
-                      </div>
-                      <div className="col-4">
-                        <i className="fa fa-road text-dark" />{" "}
-                        <span className="text-body ms-1">27K</span>
-                      </div>
-                    </div>
-                    <a
-                      href="#"
-                      className="btn btn-primary rounded-pill d-flex justify-content-center py-3"
-                    >
-                      Book Now
-                    </a>
-                  </div>
-                </div>
-              </div> */}
             </div>
           </div>
         </div>
         {/* Car categories End */}
+
         {/* Car Steps Start */}
         <div className="container-fluid steps py-5">
           <div className="container py-5">

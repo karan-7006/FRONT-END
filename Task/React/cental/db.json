@@ -1,201 +1,218 @@
 {
-    "user":[
-        {
-            "id":1,
-            "name":"Karan",
-            "email":"kharvarkaran21@gmail.com",
-            "password":"karan123",
-            "status":"unblock"
-        },
-        {
-            "id":2,
-            "name":"Dhvanit",
-            "email":"Dhvanit@gmail.com",
-            "password":"Dhvanit123",
-            "status":"unblock"
-        },
-        {
-            "id":3,
-            "name":"Ansh",
-            "email":"Ansh@gmail.com",
-            "password":"Ansh123",
-            "status":"block"
-        }
-    ],
-
-    "Admin":[
-        {
-            "id":1,
-            "name":"Akash",
-            "email":"Akash@gmail.com",
-            "password":"Akash123"
-        }
-        
-    ],
-
-    "Blog":[
-        {
-            "id":1,
-            "title":"Blue Vintage Car",
-            "description":"A Blue vintage car parked on a cobblestone street, surrounded by lush greenery and old brick buildings.",
-            "comment":"10",
-            "name":"Karan",
-            "date":"17-7-2004",
-            "img":"https://images.pexels.com/photos/170811/pexels-photo-170811.jpeg?_gl=1*rjb8ea*_ga*MTQyMDAxNTMzMy4xNzM2OTE3NDkz*_ga_8JE65Q40S6*czE3NTAwNjY4NzQkbzI0JGcxJHQxNzUwMDY2ODk4JGozNiRsMCRoMA.."
-        },
-        {
-            "id":1,
-            "title":"Green Super Car",
-            "description":"A Sleek Green super car speeding down a winding mountain road, with a breathtaking view of the vally below.",
-            "comment":"7",
-            "name":"Dhvanit",
-            "date":"20-12-2023",
-            "img":"https://images.pexels.com/photos/2127733/pexels-photo-2127733.jpeg?auto=compress&cs=tinysrgb&w=600"
-        },
-
-        {
-            "id":3,
-            "title":"Super White Car",
-            "description":"A Royal White super car speeding down a winding mountain road, with a breathtaking view of the vally below.",
-            "comment":"4",
-            "name":"Akash",
-            "date":"15-8-2023",
-            "img":"https://images.pexels.com/photos/120049/pexels-photo-120049.jpeg"
-        }
-    ],
-
-    "services":[
-        {
-            "id":1,
-            "title":"Phone-reservation",
-            "description":"Phone Reservation is a service that allows customer to reserve their appointment",
-            "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4QXu9VS3PBIC0AdlQwiQ5tZ3bGZ5qp5JQRRogiprrzq_DjvK_vgCzVDeqblwhE-JoDLE&usqp=CAU"
-        },
-        {
-            "id":1,
-            "title":"Special Rates",
-            "description":"Special rates are offered to customers who book their appointments in advance",
-            "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCKgDFjjuhT7lA-HPdyy-5PNRV17Iy3wRhHg&s"
-        }
-    ],
-
-    "Vehicle":[
-        {
-            "id":1,
-            "img": "https://images.pexels.com/photos/244206/pexels-photo-244206.jpeg?auto=compress&cs=tinysrgb&w=600",
-            "name": "Cobalt Blue car",
-            "review": "4.5",
-            "price": "$187/day",
-            "Seat": "4",
-            "transmission": "AT/MT",
-            "fuel": "Petrol",
-            "year": "2025",
-            "setting": "Auto",
-            "mileage": "25km"
-        },
-
-        {
-            "id":2,
-            "img": "https://images.pexels.com/photos/120049/pexels-photo-120049.jpeg?_gl=1*uua5u7*_ga*MTQyMDAxNTMzMy4xNzM2OTE3NDkz*_ga_8JE65Q40S6*czE3NTAwODQwMzckbzI2JGcxJHQxNzUwMDg0MDc0JGoyMyRsMCRoMA..",
-            "name": "Mercedes",
-            "review": "4.4",
-            "price": "$150/day",
-            "Seat": "2",
-            "transmission": "AT/MT",
-            "fuel": "Petrol",
-            "year": "2025",
-            "setting": "Auto",
-            "mileage": "20km"
-        },
-
-        {
-            "id":3,
-            "img": "https://images.pexels.com/photos/752615/pexels-photo-752615.jpeg?_gl=1*17451ah*_ga*MTQyMDAxNTMzMy4xNzM2OTE3NDkz*_ga_8JE65Q40S6*czE3NTAwODQwMzckbzI2JGcxJHQxNzUwMDg0MTY4JGo1NiRsMCRoMA..",
-            "name": "Bumble Bee",
-            "review": "4.3",
-            "price": "$145/day",
-            "Seat": "2",
-            "transmission": "AT/MT",
-            "fuel": "Petrol",
-            "year": "2025",
-            "setting": "Auto",
-            "mileage": "25km"
-        }
-    ],
-
-    "customer":[
-        {
-            "id":1,
-            "img": "https://images.pexels.com/photos/839011/pexels-photo-839011.jpeg?auto=compress&cs=tinysrgb&w=600",
-            "name": "John",
-            "role": "Designer"
-        },
-
-        {
-            "id":2,
-            "img": "https://images.pexels.com/photos/842811/pexels-photo-842811.jpeg?auto=compress&cs=tinysrgb&w=600",
-            "name": "Mike",
-            "role": "Developer"
-        
-        },
-
-        {
-            "id":3,
-            "img": "https://images.pexels.com/photos/1121796/pexels-photo-1121796.jpeg?auto=compress&cs=tinysrgb&w=600",
-            "name": "Azad",
-            "role": "Manager"
-        }
-    ],
-
-    "client":[
-        {
-            "id":1,
-            "img": "https://images.pexels.com/photos/733872/pexels-photo-733872.jpeg?auto=compress&cs=tinysrgb&w=600",
-            "name": "Maggie",
-            "role": "Marketing Manager",
-            "review": "4.5",
-            "description": "Cental has been a game-changer for our business. Their services are top-notch and the team is always ready to help."
-        },
-
-        {
-            "id":2,
-            "img": "https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=600",
-            "name": "Jenefer",
-            "role": "Contant Writer",
-            "review": "4.1",
-            "description": "cental service are exceptional. They have helped us streamline our operations."
-        }
-    ],
-
-    "contact":[
-        {
-            "id":1,
-            "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROhs3R07AxUjmXXSLZgb3ilZhdPBhGuGynZA&s",
-            "title": "Address",
-            "subtitle": "123 Street New York.USA"
-        },
-
-        {
-            "id":2,
-            "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdhshZTb5mqKDcQ5X75FUfCxv7oB18ln4pSQ&s",
-            "title": "Mail Us",
-            "subtitle": "info@example.com"
-        },
-
-        {
-            "id":3,
-            "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6P-7YTh_xTELoyFkQmjFGCy2N3c-0j3Ad2DqFJPV_9YQNwAxbRMDVcTnWB7CQble973Y&usqp=CAU",
-            "title": "Telephone",
-            "subtitle": "(+012) 3456 7890"
-        }
-    ],
-
-    "rating":[
-        {
-            "id":1,
-            "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVBThGFYYp_KjYkojA5KjRpNugjV8_jeRbXQ&s",
-            "numbers": "",
-            "title": ""
-        }
-    ]
+  "user": [
+    {
+      "id": "1",
+      "name": "Karan",
+      "email": "kharvarkaran21@gmail.com",
+      "password": "karan123",
+      "status": "unblock"
+    },
+    {
+      "id": "2",
+      "name": "Dhvanit",
+      "email": "Dhvanit@gmail.com",
+      "password": "Dhvanit123",
+      "status": "unblock"
+    },
+    {
+      "id": "3",
+      "name": "Ansh",
+      "email": "Ansh@gmail.com",
+      "password": "Ansh123",
+      "status": "block"
+    }
+  ],
+  "Admin": [
+    {
+      "id": "1",
+      "name": "Akash",
+      "email": "Akash@gmail.com",
+      "password": "Akash123"
+    }
+  ],
+  "Blog": [
+    {
+      "id": "1750328161948",
+      "title": "Red Super Car",
+      "name": "Ansh",
+      "comment": "45",
+      "date": "2025-06-20",
+      "img": "https://images.pexels.com/photos/3422964/pexels-photo-3422964.jpeg",
+      "description": "A Royal White super car speeding down a winding mountain road, with a breathtaking view of the vally below."
+    },
+    {
+      "id": "1750345457632",
+      "title": "Blue Vintage Car",
+      "name": "Karan",
+      "comment": "55",
+      "date": "2025-07-17",
+      "img": "https://images.pexels.com/photos/244206/pexels-photo-244206.jpeg?_gl=1*q4ibv7*_ga*MTQyMDAxNTMzMy4xNzM2OTE3NDkz*_ga_8JE65Q40S6*czE3NTAzNDU0MjQkbzMwJGcxJHQxNzUwMzQ1NDQ0JGo0MCRsMCRoMA..",
+      "description": "A Blue vintage car parked on a cobblestone street, surrounded by lush greenery and old brick buildings of the city."
+    },
+    {
+      "id": "1750345614625",
+      "title": "Bumbble Bee",
+      "name": "Aniket",
+      "comment": "61",
+      "date": "2025-09-20",
+      "img": "https://images.pexels.com/photos/97353/pexels-photo-97353.jpeg",
+      "description": "A Goldan Yellow super car speeding down a winding mountain road, with a breathtaking view of the valley below."
+    },
+    {
+      "id": "1750346479040",
+      "title": "Sleek Green Car",
+      "name": "Dhvanit",
+      "comment": "65",
+      "date": "2025-06-01",
+      "img": "https://images.pexels.com/photos/2127733/pexels-photo-2127733.jpeg",
+      "description": "A Sleek Green super car speeding down a winding mountain road, with a breathtaking view of the valley below."
+    },
+    {
+      "id": "1750346655033",
+      "title": "Royal White Car",
+      "name": "Akash",
+      "comment": "39",
+      "date": "2025-06-07",
+      "img": "https://images.pexels.com/photos/120049/pexels-photo-120049.jpeg",
+      "description": "A Royal White super car speeding down a winding mountain road, with a breathtaking view of the valley below."
+    }
+  ],
+  "services": [
+    {
+      "id": "1",
+      "title": "Phone-reservation",
+      "description": "Phone Reservation is a service that allows customer to reserve their appointment",
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4QXu9VS3PBIC0AdlQwiQ5tZ3bGZ5qp5JQRRogiprrzq_DjvK_vgCzVDeqblwhE-JoDLE&usqp=CAU"
+    },
+    {
+      "id": "1",
+      "title": "Special Rates",
+      "description": "Special rates are offered to customers who book their appointments in advance",
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCKgDFjjuhT7lA-HPdyy-5PNRV17Iy3wRhHg&s"
+    }
+  ],
+  "Vehicle": [
+    {
+      "id": "1750417536709",
+      "img": "https://images.pexels.com/photos/116675/pexels-photo-116675.jpeg",
+      "name": "White Car",
+      "review": "4.3",
+      "price": "450",
+      "Seat": "6",
+      "year": "2022",
+      "mileage": "50"
+    },
+    {
+      "id": "1750418152066",
+      "img": "https://images.pexels.com/photos/120049/pexels-photo-120049.jpeg",
+      "name": "Mercedes",
+      "review": "4.8",
+      "price": "350",
+      "Seat": "4",
+      "year": "2023",
+      "mileage": "45"
+    },
+    {
+      "id": "1750427498529",
+      "img": "https://images.pexels.com/photos/170811/pexels-photo-170811.jpeg",
+      "name": "Blue Car",
+      "review": "4.9",
+      "price": "500",
+      "Seat": "4",
+      "year": "2025",
+      "mileage": "55"
+    },
+    {
+      "id": "1750427592208",
+      "img": "https://images.pexels.com/photos/2127733/pexels-photo-2127733.jpeg",
+      "name": "Green Car",
+      "review": "4.6",
+      "price": "450",
+      "Seat": "2",
+      "year": "2024",
+      "mileage": "45"
+    },
+    {
+      "id": "1750434032494",
+      "img": "https://images.pexels.com/photos/3422964/pexels-photo-3422964.jpeg",
+      "name": "Red streak Car",
+      "review": "4.8",
+      "price": "495",
+      "Seat": "2",
+      "year": "2025",
+      "mileage": "35"
+    }
+  ],
+  "customer": [
+    {
+      "id": "1750523121024",
+      "name": "Advin",
+      "role": "Contant Writer",
+      "img": "https://images.pexels.com/photos/1300402/pexels-photo-1300402.jpeg"
+    },
+    {
+      "id": "1750523171124",
+      "name": "Mike",
+      "role": "Developer",
+      "img": "https://images.pexels.com/photos/874158/pexels-photo-874158.jpeg"
+    },
+    {
+      "id": "1750523213006",
+      "name": "John",
+      "role": "Designer",
+      "img": "https://images.pexels.com/photos/1121796/pexels-photo-1121796.jpeg"
+    },
+    {
+      "id": "1750523267113",
+      "name": "Mary",
+      "role": "Marketing",
+      "img": "https://images.pexels.com/photos/1036623/pexels-photo-1036623.jpeg"
+    }
+  ],
+  "client": [
+    {
+      "id": "1",
+      "img": "https://images.pexels.com/photos/733872/pexels-photo-733872.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "name": "Maggie",
+      "role": "Marketing Manager",
+      "review": "4.5",
+      "description": "Cental has been a game-changer for our business. Their services are top-notch and the team is always ready to help."
+    },
+    {
+      "id": "2",
+      "img": "https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "name": "Jenefer",
+      "role": "Contant Writer",
+      "review": "4.1",
+      "description": "cental service are exceptional. They have helped us streamline our operations."
+    }
+  ],
+  "contact": [
+    {
+      "id": "1",
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROhs3R07AxUjmXXSLZgb3ilZhdPBhGuGynZA&s",
+      "title": "Address",
+      "subtitle": "123 Street New York.USA"
+    },
+    {
+      "id": "2",
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdhshZTb5mqKDcQ5X75FUfCxv7oB18ln4pSQ&s",
+      "title": "Mail Us",
+      "subtitle": "info@example.com"
+    },
+    {
+      "id": "3",
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6P-7YTh_xTELoyFkQmjFGCy2N3c-0j3Ad2DqFJPV_9YQNwAxbRMDVcTnWB7CQble973Y&usqp=CAU",
+      "title": "Telephone",
+      "subtitle": "(+012) 3456 7890"
+    }
+  ],
+  "rating": [
+    {
+      "id": "1",
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVBThGFYYp_KjYkojA5KjRpNugjV8_jeRbXQ&s",
+      "numbers": "",
+      "title": ""
+    }
+  ]
 }
