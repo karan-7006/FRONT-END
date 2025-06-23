@@ -33,7 +33,7 @@
         
     ],
 
-    "About cards":[
+    "Features":[
         {
             "id":1,
             "title": "Best Pools",
@@ -49,16 +49,14 @@
         },
 
         {
-            {
             "id":3,
             "title": "RiverRides",
             "description": "Drift into adventure with our scenic river ride, where gentle currents carry you through lush landscapes and tranquil waters. Perfect for all ages.",
-            "img": "https://www.pexels.com/photo/people-riding-a-boat-2161449/"
-        }
+            "img": "https://images.pexels.com/photos/8319455/pexels-photo-8319455.jpeg"
         }
     ],
 
-    "service cards":[
+    "service-cards":[
         {
             "id":1,
             "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSal79ARA4MZ24FJKbrBZwCPvetC0sgAPuqnQ&s",

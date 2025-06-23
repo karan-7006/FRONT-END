@@ -17,38 +17,38 @@ import CarsManage from "./Admin/AdPages/Cars/CarsManage";
 import CarsAdd from "./Admin/AdPages/Cars/CarsAdd";
 import TeamAdd from "./Admin/AdPages/Team/TeamAdd";
 import TeamManage from "./Admin/AdPages/Team/TeamManage";
+import { ToastContainer} from "react-toastify";
+import AdLogin from "./Admin/AdPages/AdLogin";
 
 function App() {
   return (
     <BrowserRouter>
-    <div className="App">
+      <div className="App">
+        <ToastContainer />
 
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/About" element={<About />} />
-        <Route path="/Service" element={<Service />} />
-        <Route path="/Blog" element={<Blog />} />
-        <Route path="/Contact" element={<Contact />} />
-        <Route path="/Feature" element={<Feature />} />
-        <Route path="/Cars" element={<Cars />} />
-        <Route path="/Team" element={<Team />} />
-        <Route path="/Testimonial" element={<Testimonial />} />
-        <Route path="*" element={<NotFound />} />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/About" element={<About />} />
+          <Route path="/Service" element={<Service />} />
+          <Route path="/Blog" element={<Blog />} />
+          <Route path="/Contact" element={<Contact />} />
+          <Route path="/Feature" element={<Feature />} />
+          <Route path="/Cars" element={<Cars />} />
+          <Route path="/Team" element={<Team />} />
+          <Route path="/Testimonial" element={<Testimonial />} />
+          <Route path="*" element={<NotFound />} />
 
-        {/* -:Admin:- */}
-        <Route path="/DashBoard" element={<DashBoard />} />
-        <Route path="/BlogsManage" element={<BlogsManage />} />
-        <Route path="/BlogsAdd" element={<BlogsAdd />} />
-        <Route path="/CarsManage" element={<CarsManage />} />
-        <Route path="/CarsAdd" element={<CarsAdd />} />
-        <Route path="/TeamAdd" element={<TeamAdd />} />
-        <Route path="/TeamManage" element={<TeamManage />} />
-        
-
-
-      </Routes>
-
-    </div>
+          {/* -:Admin:- */}
+          <Route path="/DashBoard" element={<DashBoard />} />
+          <Route path="/BlogsManage" element={<BlogsManage />} />
+          <Route path="/BlogsAdd" element={<BlogsAdd />} />
+          <Route path="/CarsManage" element={<CarsManage />} />
+          <Route path="/CarsAdd" element={<CarsAdd />} />
+          <Route path="/TeamAdd" element={<TeamAdd />} />
+          <Route path="/TeamManage" element={<TeamManage />} />
+          <Route path="/AdLogin" element={<AdLogin />} />
+        </Routes>
+      </div>
     </BrowserRouter>
   );
 }

@@ -266,7 +266,7 @@ function TeamManage() {
                             <div className="col-md-6">
                               <button
                                 className="btn btn-light w-100 py-3"
-                                onClick={updatedata}
+                                onClick={updatedata} 
                                 data-bs-dismiss="modal"
                               >
                                 update blogs

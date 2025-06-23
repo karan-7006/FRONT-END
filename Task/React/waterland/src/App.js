@@ -12,6 +12,9 @@ import Ticket from "./WaterLand/Pages/Ticket";
 import Team from "./WaterLand/Pages/Team";
 import Testimonial from "./WaterLand/Pages/Testimonial";
 import NotFound from "./WaterLand/Pages/NotFound";
+import DashBoard from "./Admin/AdPages/DashBoard";
+import FeaturesManage from "./Admin/AdPages/Ad-Features/FeaturesManage";
+import FeaturesAdd from "./Admin/AdPages/Ad-Features/FeaturesAdd";
 
 function App() {
   return (
@@ -32,6 +35,12 @@ function App() {
       <Route path="/Team" element={<Team />} />
       <Route path="/Testimonial" element={<Testimonial />} />
       <Route path="*" element={<NotFound />} />
+
+      {/* ADMIN */}
+
+      <Route path="/DashBoard" element={<DashBoard />} />
+      <Route path="/FeaturesManage" element={<FeaturesManage />} />
+      <Route path="/FeaturesAdd" element={<FeaturesAdd />} />
 
 
       </Routes>
