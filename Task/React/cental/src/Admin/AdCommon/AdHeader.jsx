@@ -1,7 +1,24 @@
-import React from "react";
-import { NavLink } from "react-router-dom";
+import React, { useEffect } from "react";
+import { NavLink, redirect, useNavigate } from "react-router-dom";
+import { toast } from "react-toastify";
 
 function AdHeader() {
+
+  const redirect = useNavigate()
+
+  useEffect(()=>{
+    if(!localStorage.getItem("AdminId")) {
+      redirect("/AdLogin")
+    }
+  })
+
+  const logout = ()=> {
+    localStorage.removeItem("AdminId")
+    localStorage.removeItem("AdminName")
+    redirect("/AdLogin")
+    toast.success("Admin Logout SuccessFully!!")
+  }
+
   return (
     <div>
       {/* Topbar Start */}
@@ -62,7 +79,7 @@ function AdHeader() {
         <div className="container">
           <nav className="navbar navbar-expand-lg navbar-light">
             <NavLink to="/" className="navbar-brand p-0">
-              <h1 className="display-6 text-primary fw-bold">
+              <h1 className="display-6 text-primary fw-bold me-5">
                 <i className="fas fa-car-alt me-3" />
                 Admin DashBoard
               </h1>
@@ -138,6 +155,7 @@ function AdHeader() {
                     </NavLink>
                   </div>
                 </div>
+                
                 <div className="nav-item dropdown">
                   <a
                     href="#"
@@ -158,10 +176,35 @@ function AdHeader() {
                     </NavLink>
                   </div>
                 </div>
+                {
+                      (() => {
+                        if (localStorage.getItem("AdminId")) {
+                          return (
+
+                            <NavLink className="nav-item nav-link" to="#">
+                              Hello {localStorage.getItem("AdminName")}
+                            </NavLink>
+                          )
+                        }
+                      })()
+                    }
+                    {
+                      (() => {
+                        if (localStorage.getItem("AdminId")) {
+                          return (
+                            <NavLink onClick={logout} className="nav-item nav-link" to="#">
+                              Admin-LogOut
+                            </NavLink>)
+                        }
+
+                        else{
+                          return(
+                            <NavLink to="/AdLogin">Admin-Login</NavLink>
+                          )
+                        }
+                      })()
+                    }
               </div>
-              <a href="#" className="btn btn-primary rounded-pill py-2 px-4">
-                Get Started
-              </a>
             </div>
           </nav>
         </div>

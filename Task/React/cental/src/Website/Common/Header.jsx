@@ -1,7 +1,24 @@
-import React from "react";
-import { NavLink } from "react-router-dom";
+import React, { useEffect } from "react";
+import { NavLink, useNavigate } from "react-router-dom";
+import { toast } from "react-toastify";
 
 function Header() {
+
+  const redirect = useNavigate()
+
+  useEffect(()=>{
+    if(!localStorage.getItem("userId")) {
+      redirect("/Login")
+    }
+  })
+
+  const logout = ()=> {
+    localStorage.removeItem("userId")
+    localStorage.removeItem("username")
+    redirect("/Login")
+    toast.success("User Logout SuccessFully...!!")
+  }
+
   return (
     <div>
       {/* Topbar Start */}
@@ -117,10 +134,34 @@ function Header() {
                   Contact
                 </NavLink>
               </div>
-              <a href="#" className="btn btn-primary rounded-pill py-2 px-4">
-                Get Started
-              </a>
             </div>
+
+            {
+              (()=> {
+                if (localStorage.getItem("userId")) {
+                  return (
+                    <NavLink className="nav-item nav-link" to="/UserEdit">Hello- {localStorage.getItem("username")}</NavLink>
+                  )
+                }
+              })()
+            }
+            {
+              (()=> {
+                if (localStorage.getItem("userId")) {
+                  return (
+                      <NavLink onClick={logout} className="nav-item nav-link" to="#">User-Logout</NavLink>
+                  )
+                }
+
+                else{
+                  return(
+                    <NavLink to="/Login">User-Login</NavLink>
+                  )
+                }
+
+              })()
+            }
+
           </nav>
         </div>
       </div>

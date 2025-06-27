@@ -2,10 +2,10 @@
   "user": [
     {
       "id": "1",
-      "name": "Karan",
-      "email": "kharvarkaran21@gmail.com",
-      "password": "karan123",
-      "status": "unblock"
+      "name": "Akash",
+      "email": "Akash@gmail.com",
+      "password": "Akash123",
+      "status": "block"
     },
     {
       "id": "2",
@@ -20,14 +20,21 @@
       "email": "Ansh@gmail.com",
       "password": "Ansh123",
       "status": "block"
+    },
+    {
+      "id": "1750852020269",
+      "name": "karan",
+      "email": "karan@gmail.com",
+      "password": "123456",
+      "status": "unblock"
     }
   ],
   "Admin": [
     {
       "id": "1",
-      "name": "Akash",
-      "email": "Akash@gmail.com",
-      "password": "Akash123"
+      "name": "Karan",
+      "email": "kharvarkaran@gmail.com",
+      "password": "karan123"
     }
   ],
   "Blog": [
