@@ -15,6 +15,8 @@ import NotFound from "./WaterLand/Pages/NotFound";
 import DashBoard from "./Admin/AdPages/DashBoard";
 import FeaturesManage from "./Admin/AdPages/Ad-Features/FeaturesManage";
 import FeaturesAdd from "./Admin/AdPages/Ad-Features/FeaturesAdd";
+import TeamManage from "./Admin/AdPages/Ad-Team/TeamManage";
+import TeamAdd from "./Admin/AdPages/Ad-Team/TeamAdd";
 
 function App() {
   return (
@@ -41,6 +43,8 @@ function App() {
       <Route path="/DashBoard" element={<DashBoard />} />
       <Route path="/FeaturesManage" element={<FeaturesManage />} />
       <Route path="/FeaturesAdd" element={<FeaturesAdd />} />
+      <Route path="/TeamManage" element={<TeamManage />} />
+      <Route path="/TeamAdd" element={<TeamAdd />} />
 
 
       </Routes>

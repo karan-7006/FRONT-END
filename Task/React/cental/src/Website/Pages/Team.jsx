@@ -7,10 +7,6 @@ import axios from "axios";
 function Team() {
   const [team, setteam] = useState([]);
 
-  // useEffect(() => {
-  //     fetchdata();
-  //   }, []);
-
   useEffect(() => {
     fetchdata();
   }, []);

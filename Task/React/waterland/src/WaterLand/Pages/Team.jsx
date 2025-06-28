@@ -1,9 +1,23 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Header from "../Common/Header";
 import NavHeader from "../Common/NavHeader";
 import Footer from "../Common/Footer";
+import axios from "axios";
 
 function Team() {
+
+  const [team, setteam] = useState([]);
+
+  useEffect(() => {
+    fetchdata();
+  }, []);
+
+  const fetchdata = async () => {
+    const res = await axios.get("http://localhost:3000/team")
+    console.log(res.data)
+    setteam(res.data);
+  }
+
   return (
     <div>
       <Header />
@@ -29,170 +43,69 @@ function Team() {
             </p>
           </div>
           <div className="row g-4 justify-content-center">
-            <div
-              className="col-md-6 col-lg-6 col-xl-4 wow fadeInUp"
-              data-wow-delay="0.2s"
-            >
-              <div className="team-item p-4">
-                <div className="team-content">
-                  <div className="d-flex justify-content-between border-bottom pb-4">
-                    <div className="text-start">
-                      <h4 className="mb-0">David James</h4>
-                      <p className="mb-0">Profession</p>
-                    </div>
-                    <div>
-                      <img
-                        src="img/team-1.jpg"
-                        className="img-fluid rounded"
-                        style={{ width: 100, height: 100 }}
-                        alt
-                      />
-                    </div>
-                  </div>
-                  <div className="team-icon rounded-pill my-4 p-3">
-                    <a
-                      className="btn btn-primary btn-sm-square rounded-circle me-3"
-                      href
-                    >
-                      <i className="fab fa-facebook-f" />
-                    </a>
-                    <a
-                      className="btn btn-primary btn-sm-square rounded-circle me-3"
-                      href
-                    >
-                      <i className="fab fa-twitter" />
-                    </a>
-                    <a
-                      className="btn btn-primary btn-sm-square rounded-circle me-3"
-                      href
-                    >
-                      <i className="fab fa-linkedin-in" />
-                    </a>
-                    <a
-                      className="btn btn-primary btn-sm-square rounded-circle me-0"
-                      href
-                    >
-                      <i className="fab fa-instagram" />
-                    </a>
-                  </div>
-                  <p className="text-center mb-0">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Autem, quibusdam eveniet itaque provident sequi deserunt.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div
-              className="col-md-6 col-lg-6 col-xl-4 wow fadeInUp"
-              data-wow-delay="0.4s"
-            >
-              <div className="team-item p-4">
-                <div className="team-content">
-                  <div className="d-flex justify-content-between border-bottom pb-4">
-                    <div className="text-start">
-                      <h4 className="mb-0">William John</h4>
-                      <p className="mb-0">Profession</p>
-                    </div>
-                    <div>
-                      <img
-                        src="img/team-2.jpg"
-                        className="img-fluid rounded"
-                        style={{ width: 100, height: 100 }}
-                        alt
-                      />
+            {
+              team && team.map((data) => {
+                console.log(data);
+                return (
+                  <div
+                    className="col-md-6 col-lg-6 col-xl-4 wow fadeInUp"
+                    data-wow-delay="0.2s"
+                  >
+                    <div className="team-item p-4">
+                      <div className="team-content">
+                        <div className="d-flex justify-content-between border-bottom pb-4">
+                          <div className="text-start">
+                            <h4 className="mb-0">{data.name}</h4>
+                            <p className="mb-0">{data.role}</p>
+                          </div>
+                          <div>
+                            <img
+                              src={data.img}
+                              className="img-fluid rounded"
+                              style={{ width: 275, height: 200 }}
+                              alt
+                            />
+                          </div>
+                        </div>
+                        <div className="team-icon rounded-pill my-4 p-3">
+                          <a
+                            className="btn btn-primary btn-sm-square rounded-circle me-3"
+                            href
+                          >
+                            <i className="fab fa-facebook-f" />
+                          </a>
+                          <a
+                            className="btn btn-primary btn-sm-square rounded-circle me-3"
+                            href
+                          >
+                            <i className="fab fa-twitter" />
+                          </a>
+                          <a
+                            className="btn btn-primary btn-sm-square rounded-circle me-3"
+                            href
+                          >
+                            <i className="fab fa-linkedin-in" />
+                          </a>
+                          <a
+                            className="btn btn-primary btn-sm-square rounded-circle me-0"
+                            href
+                          >
+                            <i className="fab fa-instagram" />
+                          </a>
+                        </div>
+                        <p className="text-center mb-0">
+                          {data.description}
+                        </p>
+                      </div>
                     </div>
                   </div>
-                  <div className="team-icon rounded-pill my-4 p-3">
-                    <a
-                      className="btn btn-primary btn-sm-square rounded-circle me-3"
-                      href
-                    >
-                      <i className="fab fa-facebook-f" />
-                    </a>
-                    <a
-                      className="btn btn-primary btn-sm-square rounded-circle me-3"
-                      href
-                    >
-                      <i className="fab fa-twitter" />
-                    </a>
-                    <a
-                      className="btn btn-primary btn-sm-square rounded-circle me-3"
-                      href
-                    >
-                      <i className="fab fa-linkedin-in" />
-                    </a>
-                    <a
-                      className="btn btn-primary btn-sm-square rounded-circle me-0"
-                      href
-                    >
-                      <i className="fab fa-instagram" />
-                    </a>
-                  </div>
-                  <p className="text-center mb-0">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Autem, quibusdam eveniet itaque provident sequi deserunt.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div
-              className="col-md-6 col-lg-6 col-xl-4 wow fadeInUp"
-              data-wow-delay="0.6s"
-            >
-              <div className="team-item p-4">
-                <div className="team-content">
-                  <div className="d-flex justify-content-between border-bottom pb-4">
-                    <div className="text-start">
-                      <h4 className="mb-0">Michael John</h4>
-                      <p className="mb-0">Profession</p>
-                    </div>
-                    <div>
-                      <img
-                        src="img/team-3.jpg"
-                        className="img-fluid rounded"
-                        style={{ width: 100, height: 100 }}
-                        alt
-                      />
-                    </div>
-                  </div>
-                  <div className="team-icon rounded-pill my-4 p-3">
-                    <a
-                      className="btn btn-primary btn-sm-square rounded-circle me-3"
-                      href
-                    >
-                      <i className="fab fa-facebook-f" />
-                    </a>
-                    <a
-                      className="btn btn-primary btn-sm-square rounded-circle me-3"
-                      href
-                    >
-                      <i className="fab fa-twitter" />
-                    </a>
-                    <a
-                      className="btn btn-primary btn-sm-square rounded-circle me-3"
-                      href
-                    >
-                      <i className="fab fa-linkedin-in" />
-                    </a>
-                    <a
-                      className="btn btn-primary btn-sm-square rounded-circle me-0"
-                      href
-                    >
-                      <i className="fab fa-instagram" />
-                    </a>
-                  </div>
-                  <p className="text-center mb-0">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Autem, quibusdam eveniet itaque provident sequi deserunt.
-                  </p>
-                </div>
-              </div>
-            </div>
+                )
+              })
+            }
           </div>
         </div>
       </div>
       {/* Team End */}
-
       <Footer />
     </div>
   );

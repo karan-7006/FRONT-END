@@ -18,13 +18,6 @@ function UserManage() {
         setform(res.data);
     };
 
-    const [formdata, setformdata] = useState({
-        id: "",
-        name: "",
-        email: "",
-        status: ""
-    });
-
     const [formopen, setformopen] = useState(null);
     const [updateform, setupdateform] = useState({
         id: "",

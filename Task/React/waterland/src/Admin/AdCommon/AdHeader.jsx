@@ -44,6 +44,23 @@ function AdHeader() {
                                     </NavLink>
                                 </div>
                             </div>
+                            <div className="nav-item dropdown">
+                                <a
+                                    href="#"
+                                    className="nav-link dropdown-toggle"
+                                    data-bs-toggle="dropdown"
+                                >
+                                    Team
+                                </a>
+                                <div className="dropdown-menu m-0">
+                                    <NavLink to="/TeamManage" className="dropdown-item">
+                                        Team-Manage
+                                    </NavLink>
+                                    <NavLink to="/TeamAdd" className="dropdown-item">
+                                        Team-Add
+                                    </NavLink>
+                                </div>
+                            </div>
                             <NavLink to="/Service" className="nav-item nav-link">
                                 Service
                             </NavLink>

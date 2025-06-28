@@ -1,9 +1,23 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Header from "../Common/Header";
 import NavHeader from "../Common/NavHeader";
 import Footer from "../Common/Footer";
+import axios from "axios";
 
 function Blog() {
+
+  const [blog, setblog] = useState([]);
+
+  useEffect(() => {
+    fetchdata()
+  }, []);
+
+  const fetchdata = async () => {
+    const res = await axios.get("http://localhost:3000/blog");
+    console.log(res.data);
+    setblog(res.data);
+  }
+
   return (
     <div>
       <Header />
@@ -27,109 +41,48 @@ function Blog() {
             </p>
           </div>
           <div className="row g-4">
-            <div className="col-lg-4 wow fadeInUp" data-wow-delay="0.2s">
-              <div className="blog-item">
-                <div className="blog-img">
-                  <a href="#">
-                    <img
-                      src="img/blog-2.jpg"
-                      className="img-fluid w-100 rounded-top"
-                      alt="Image"
-                    />
-                  </a>
-                  <div className="blog-category py-2 px-4">Vacation</div>
-                  <div className="blog-date">
-                    <i className="fas fa-clock me-2" />
-                    August 19, 2025
-                  </div>
-                </div>
-                <div className="blog-content p-4">
-                  <a href="#" className="h4 d-inline-block mb-4">
-                    Why Children Dont Like Getting Out Of The Water
-                  </a>
-                  <p className="mb-4">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Ullam aspernatur nam quidem porro sapiente, neque a
-                    quibusdam....
-                  </p>
-                  <a
-                    href="#"
-                    className="btn btn-primary rounded-pill py-2 px-4"
-                  >
-                    Read More <i className="fas fa-arrow-right ms-2" />
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-4 wow fadeInUp" data-wow-delay="0.4s">
-              <div className="blog-item">
-                <div className="blog-img">
-                  <a href="#">
-                    <img
-                      src="img/blog-3.jpg"
-                      className="img-fluid w-100 rounded-top"
-                      alt="Image"
-                    />
-                  </a>
-                  <div className="blog-category py-2 px-4">Insight</div>
-                  <div className="blog-date">
-                    <i className="fas fa-clock me-2" />
-                    August 19, 2025
-                  </div>
-                </div>
-                <div className="blog-content p-4">
-                  <a href="#" className="h4 d-inline-block mb-4">
-                    5 Ways To Enjoy Waterland This Spring Break
-                  </a>
-                  <p className="mb-4">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Ullam aspernatur nam quidem porro sapiente, neque a
-                    quibusdam....
-                  </p>
-                  <a
-                    href="#"
-                    className="btn btn-primary rounded-pill py-2 px-4"
-                  >
-                    Read More <i className="fas fa-arrow-right ms-2" />
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-4 wow fadeInUp" data-wow-delay="0.6s">
-              <div className="blog-item">
-                <div className="blog-img">
-                  <a href="#">
-                    <img
-                      src="img/blog-1.jpg"
-                      className="img-fluid w-100 rounded-top"
-                      alt="Image"
-                    />
-                  </a>
-                  <div className="blog-category py-2 px-4">Insight</div>
-                  <div className="blog-date">
-                    <i className="fas fa-clock me-2" />
-                    August 19, 2025
-                  </div>
-                </div>
-                <div className="blog-content p-4">
-                  <a href="#" className="h4 d-inline-block mb-4">
-                    3 Tips for Your Family Spring Break at Amusement Park
-                  </a>
-                  <p className="mb-4">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Ullam aspernatur nam quidem porro sapiente, neque a
-                    quibusdam....
-                  </p>
-                  <a
-                    href="#"
-                    className="btn btn-primary rounded-pill py-2 px-4"
-                  >
-                    Read More <i className="fas fa-arrow-right ms-2" />
-                  </a>
-                </div>
+            <div className="col-12">
+              <div className="d-flex flex-row flex-nowrap overflow-auto">
+                {
+                  blog && blog.map((data) => (
+                    <div className="card me-3" style={{ minWidth: '300px' }}>
+                      <div className="blog-item">
+                        <div className="blog-img">
+                          <a href="#">
+                            <img
+                              src={data.img}
+                              className="img-fluid w-100 rounded-top"
+                              alt="Image"
+                            />
+                          </a>
+                          <div className="blog-category py-2 px-4">{data.badge}</div>
+                          <div className="blog-date">
+                            <i className="fas fa-clock me-2" />
+                            {data.date}
+                          </div>
+                        </div>
+                        <div className="blog-content p-4">
+                          <a href="#" className="h5 d-inline-block mb-3">
+                            {data.title}
+                          </a>
+                          <p className="mb-3">
+                            {data.description}
+                          </p>
+                          <a
+                            href="#"
+                            className="btn btn-primary rounded-pill py-2 px-4"
+                          >
+                            Read More <i className="fas fa-arrow-right ms-2" />
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  ))
+                }
               </div>
             </div>
           </div>
+
         </div>
       </div>
       {/* Blog End */}
