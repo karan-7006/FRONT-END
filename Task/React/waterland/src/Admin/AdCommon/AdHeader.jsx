@@ -61,11 +61,25 @@ function AdHeader() {
                                     </NavLink>
                                 </div>
                             </div>
+                            <div className="nav-item dropdown">
+                                <a
+                                    href="#"
+                                    className="nav-link dropdown-toggle"
+                                    data-bs-toggle="dropdown"
+                                >
+                                    Blogs
+                                </a>
+                                <div className="dropdown-menu m-0">
+                                    <NavLink to="/BlogManage" className="dropdown-item">
+                                        Blogs-Manage
+                                    </NavLink>
+                                    <NavLink to="/BlogAdd" className="dropdown-item">
+                                        Blogs-Add
+                                    </NavLink>
+                                </div>
+                            </div>
                             <NavLink to="/Service" className="nav-item nav-link">
                                 Service
-                            </NavLink>
-                            <NavLink to="/Blog" className="nav-item nav-link">
-                                Blog
                             </NavLink>
                             <div className="nav-item dropdown">
                                 <a
@@ -88,17 +102,15 @@ function AdHeader() {
                                     <NavLink to="/Ticket" className="dropdown-item">
                                         Ticket Packages
                                     </NavLink>
-                                    <NavLink to="/Team" className="dropdown-item">
-                                        Our Team
-                                    </NavLink>
                                     <NavLink to="/Testimonial" className="dropdown-item">
                                         Testimonial
                                     </NavLink>
+                                    <NavLink to="/Contact" className="dropdown-item">
+                                        Contact
+                                    </NavLink>
                                 </div>
                             </div>
-                            <NavLink to="/Contact" className="nav-item nav-link">
-                                Contact
-                            </NavLink>
+
                         </div>
                         <div className="team-icon d-none d-xl-flex justify-content-center me-3">
                             <a className="btn btn-square btn-light rounded-circle mx-1" href>

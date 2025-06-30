@@ -17,6 +17,8 @@ import FeaturesManage from "./Admin/AdPages/Ad-Features/FeaturesManage";
 import FeaturesAdd from "./Admin/AdPages/Ad-Features/FeaturesAdd";
 import TeamManage from "./Admin/AdPages/Ad-Team/TeamManage";
 import TeamAdd from "./Admin/AdPages/Ad-Team/TeamAdd";
+import BlogManage from "./Admin/AdPages/Ad-Blogs/BlogManage";
+import BlogAdd from "./Admin/AdPages/Ad-Blogs/BlogAdd";
 
 function App() {
   return (
@@ -45,6 +47,8 @@ function App() {
       <Route path="/FeaturesAdd" element={<FeaturesAdd />} />
       <Route path="/TeamManage" element={<TeamManage />} />
       <Route path="/TeamAdd" element={<TeamAdd />} />
+      <Route path="/BlogManage" element={<BlogManage />} />
+      <Route path="/BlogAdd" element={<BlogAdd />} />
 
 
       </Routes>

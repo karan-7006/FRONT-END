@@ -45,7 +45,7 @@ function Blog() {
               <div className="d-flex flex-row flex-nowrap overflow-auto">
                 {
                   blog && blog.map((data) => (
-                    <div className="card me-3" style={{ minWidth: '300px' }}>
+                    <div className="card me-3" style={{ minWidth: '300px'}}>
                       <div className="blog-item">
                         <div className="blog-img">
                           <a href="#">

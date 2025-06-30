@@ -122,7 +122,7 @@ function TeamManage() {
                         <div className="modal-content">
                             <div className="modal-body">
                                 <h1 className="mb-4 text-center fw-bold mb-4" style={{ color: "darkslateblue" }}><u>View Feature</u></h1>
-                                <div className="team-item p-4">
+                                <div className="team-item shadow-lg p-4">
                                     <div className="team-content">
                                         <div className="d-flex justify-content-between border-bottom pb-4">
                                             <div className="text-start">
