@@ -19,10 +19,18 @@ import TeamManage from "./Admin/AdPages/Ad-Team/TeamManage";
 import TeamAdd from "./Admin/AdPages/Ad-Team/TeamAdd";
 import BlogManage from "./Admin/AdPages/Ad-Blogs/BlogManage";
 import BlogAdd from "./Admin/AdPages/Ad-Blogs/BlogAdd";
+import Login from "./WaterLand/Pages/Login";
+import Register from "./WaterLand/Pages/Register";
+import UserEdit from "./WaterLand/Pages/UserEdit";
+import AdLogin from "./Admin/AdPages/AdLogin";
+import AdminEdit from "./Admin/AdPages/AdminEdit";
+import UserManage from "./Admin/AdPages/UserManage";
+import { ToastContainer } from "react-toastify";
 
 function App() {
   return (
     <BrowserRouter>
+    <ToastContainer />
     <div className="App">
 
       <Routes>
@@ -39,6 +47,9 @@ function App() {
       <Route path="/Team" element={<Team />} />
       <Route path="/Testimonial" element={<Testimonial />} />
       <Route path="*" element={<NotFound />} />
+      <Route path="/Login" element={<Login />} />
+      <Route path="/Register" element={<Register />} />
+      <Route path="/UserEdit" element={<UserEdit />} />
 
       {/* ADMIN */}
 
@@ -49,6 +60,9 @@ function App() {
       <Route path="/TeamAdd" element={<TeamAdd />} />
       <Route path="/BlogManage" element={<BlogManage />} />
       <Route path="/BlogAdd" element={<BlogAdd />} />
+      <Route path="/AdLogin" element={<AdLogin />} />
+      <Route path="/AdminEdit" element={<AdminEdit />} />
+      <Route path="/UserManage" element={<UserManage />} />
 
 
       </Routes>

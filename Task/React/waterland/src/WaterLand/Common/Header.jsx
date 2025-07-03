@@ -1,7 +1,25 @@
-import React from "react";
-import { NavLink } from "react-router-dom";
+import React, { useEffect } from 'react'
+import { NavLink, useNavigate } from 'react-router-dom'
+import { toast } from 'react-toastify'
+
 
 function Header() {
+
+  const redirect = useNavigate()
+
+  useEffect(() => {
+    if (!localStorage.getItem("userId")) {
+      redirect("/Login")
+    }
+  })
+
+  const logout = () => {
+    localStorage.removeItem("userId")
+    localStorage.removeItem("username")
+    redirect("/Login")
+    toast.success("Logout SuccessFully")
+  }
+
   return (
     <div>
       {/* Navbar & Hero Start */}
@@ -68,6 +86,33 @@ function Header() {
               <NavLink to="/Contact" className="nav-item nav-link">
                 Contact
               </NavLink>
+
+              {
+                (() => {
+                  if (localStorage.getItem("userId")) {
+                    return (
+                      <NavLink className="nav-item nav-link fw-semibold text-primary ms-5" to="/UserEdit">Hello- {localStorage.getItem("username")}</NavLink>
+                    )
+                  }
+                })()
+              }
+              {
+                (() => {
+                  if (localStorage.getItem("userId")) {
+                    return (
+                      <NavLink onClick={logout} className="nav-item nav-link me-3 fw-semibold" to="#">User-Logout</NavLink>
+                    )
+                  }
+
+                  else {
+                    return (
+                      <NavLink to="/Login">User-Login</NavLink>
+                    )
+                  }
+
+                })()
+              }
+
             </div>
             <div className="team-icon d-none d-xl-flex justify-content-center me-3">
               <a className="btn btn-square btn-light rounded-circle mx-1" href>

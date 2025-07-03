@@ -3,31 +3,31 @@
     {
       "id": "1",
       "name": "Karan",
-      "email": "kharvarkaran21@gmail.com",
+      "email": "karan@gmail.com",
       "password": "karan123",
       "status": "unblock"
     },
     {
       "id": "2",
-      "name": "Dhvanit",
-      "email": "Dhvanit@gmail.com",
-      "password": "Dhvanit123",
+      "name": "dhvanit",
+      "email": "dhvanit@gmail.com",
+      "password": "dhvanit123",
       "status": "unblock"
     },
     {
       "id": "3",
-      "name": "Ansh",
-      "email": "Ansh@gmail.com",
-      "password": "Ansh123",
+      "name": "ansh",
+      "email": "ansh@gmail.com",
+      "password": "ansh123",
       "status": "block"
     }
   ],
   "Admin": [
     {
       "id": "1",
-      "name": "Akash",
-      "email": "Akash@gmail.com",
-      "password": "Akash123"
+      "name": "karan",
+      "email": "karan21@gmail.com",
+      "password": "karan12356"
     }
   ],
   "Features": [
@@ -135,15 +135,16 @@
       "id": "1",
       "badge": "Vacation",
       "img": "https://images.pexels.com/photos/5952780/pexels-photo-5952780.jpeg",
-      "date": "August 19, 2025",
+      "date": "2025-06-22",
       "title": "Why children don't like getting out of the water",
-      "description": "Experience the thrill with our exciting waterslides, designed for all ages! Twist, turn, and splash your way down smooth, safe slides that guarantee endless fun and laughter."
+      "description": "Experience the thrill with our exciting waterslides, designed for all ages! Twist, turn, and splash your way down smooth, safe slides that guarantee endless fun and laughter.",
+      "2025-07-05": "2025-07-05"
     },
     {
       "id": "2",
       "badge": "Insight",
       "img": "https://images.pexels.com/photos/10067462/pexels-photo-10067462.jpeg",
-      "date": "August 19, 2025",
+      "date": "2025-06-04",
       "title": "5 Ways to enjoy waterland in this spring",
       "description": "Dive into fun at our water park, where every splash brings a smile! With thrilling slides, relaxing pools, and family-friendly attractions, there's something for everyone."
     },
@@ -151,7 +152,7 @@
       "id": "3",
       "badge": "Enjoyment",
       "img": "https://images.pexels.com/photos/8319455/pexels-photo-8319455.jpeg",
-      "date": "August 19, 2025",
+      "date": "2025-06-27",
       "title": "3 Tips for your family spring break at water park",
       "description": "Get ready for nonstop thrills at our action-packed water park! Race down towering slides, float along lazy rivers, and cool off in wave pools designed for all ages."
     }

@@ -1,7 +1,25 @@
-import React from 'react'
-import { NavLink } from 'react-router-dom'
+import React, { useEffect } from "react";
+import { NavLink, redirect, useNavigate } from "react-router-dom";
+import { toast } from "react-toastify";
+
 
 function AdHeader() {
+
+    const redirect = useNavigate()
+
+    useEffect(() => {
+        if (!localStorage.getItem("AdminId")) {
+            redirect("/AdLogin")
+        }
+    })
+
+    const logout = () => {
+        localStorage.removeItem("AdminId")
+        localStorage.removeItem("AdminName")
+        redirect("/AdLogin")
+        toast.success("Admin Logout SuccessFully!!")
+    }
+
     return (
         <div>
             {/* Navbar & Hero Start */}
@@ -78,9 +96,9 @@ function AdHeader() {
                                     </NavLink>
                                 </div>
                             </div>
-                            <NavLink to="/Service" className="nav-item nav-link">
+                            {/* <NavLink to="/Service" className="nav-item nav-link">
                                 Service
-                            </NavLink>
+                            </NavLink> */}
                             <div className="nav-item dropdown">
                                 <a
                                     href="#"
@@ -109,7 +127,41 @@ function AdHeader() {
                                         Contact
                                     </NavLink>
                                 </div>
+
                             </div>
+
+                            <NavLink to="/UserManage" className="nav-item nav-link">
+                                UserManage
+                            </NavLink>
+
+                            {
+                                (() => {
+                                    if (localStorage.getItem("AdminId")) {
+                                        return (
+
+                                            <NavLink className="nav-item nav-link ms-5 text-primary" to="/AdminEdit">
+                                                Hello-{localStorage.getItem("AdminName")}
+                                            </NavLink>
+                                        )
+                                    }
+                                })()
+                            }
+                            {
+                                (() => {
+                                    if (localStorage.getItem("AdminId")) {
+                                        return (
+                                            <NavLink onClick={logout} className="nav-item nav-link" to="#">
+                                                Admin-LogOut
+                                            </NavLink>)
+                                    }
+
+                                    else {
+                                        return (
+                                            <NavLink to="/AdLogin">Admin-Login</NavLink>
+                                        )
+                                    }
+                                })()
+                            }
 
                         </div>
                         <div className="team-icon d-none d-xl-flex justify-content-center me-3">
